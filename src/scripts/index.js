@@ -5,12 +5,15 @@ const footerTpl = require("./views/footer.html")
 const logresTpl = require("./views/logres.html")
 const homeTpl = require("./views/home.html")
 
-var wsCache = new WebStorageCache();
-
 const logRes = require("./utils/logRes")
-const commonController = require("./utils/commonController")
 
 const userController = require("./controllers/userLR.controller")
+const commonController = require("./utils/commonController")
+
+var wsCache = new WebStorageCache();
+
+
+
 // let storage = wsCache.get(telephone)
 var storage=window.localStorage;
 if(storage.telephone){
@@ -25,16 +28,17 @@ $("#root").html(indexTpl)
 $("#header").html(header)
 $("#container").html(homeTpl + footerTpl + logresTpl)
 
-
 logRes.lr();
 
 userController.LogRes();
-
 commonController.changeClass()
-var mySwiper = new Swiper('.swiper-container', {
+
+var mySwiper = new Swiper('.swiper-container',{
     direction: 'horizontal',
     loop: true,
+    
     // 如果需要分页器
-    pagination: '.swiper-pagination',   
+    pagination: {
+      el: '.swiper-pagination',
+    },
 })
-

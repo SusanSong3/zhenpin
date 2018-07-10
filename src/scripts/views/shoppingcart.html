@@ -9,6 +9,15 @@
 
         <div class="shoppingCart_table">
             <table>
+                <colgroup>
+                    <col class="col_radio">
+                    <col class="col_info">
+                    <col class="col_price">
+                    <col class="col_number">
+                    <col class="col_totalprice">
+                    <col class="col_dele">
+
+                </colgroup>
                 <thead>
                     <tr>
                         <th><input type="radio"/><label>全选</label></th>
@@ -21,30 +30,102 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="radio"/></td>
-                        <td><img src="../images/shopingcart.png"/></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <div>
+                                <div class="fl_l"><input type="radio"/></div>
+                                <div class="fl_l shopping_img"><img src="../images/1a030b6419099cdbb2e6283ead0f78b4.png"/></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="shopping_info">
+                                <span>产品名</span>
+                                <p>这里是规格信息值保留一定的字段显示。。。</p>
+                            </div>
+                        </td>
+                        <td >￥<span class="td_price">40</span></td>
+                        <td >
+                            <div>
+                                <a class="cart_jian" href="javascript:void(0);" ng-click="cal_minus()">-</a>
+                                <input class="shopNum" type="text" value="1"/>
+                                <a class="cart_jia" href="javascript:void(0);">+</a>
+                            </div>
+                        </td>
+                        <td >￥<span class="td_totalprice">40</span></td>
+                        <td>删除</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <div>
+                                <div class="fl_l"><input type="radio"/></div>
+                                <div class="fl_l shopping_img"><img src="../images/1a030b6419099cdbb2e6283ead0f78b4.png"/></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="shopping_info">
+                                <span>产品名</span>
+                                <p>这里是规格信息值保留一定的字段显示。。。</p>
+                            </div>
+                        </td>
+                        <td >￥<span class="td_price">40</span></td>
+                        <td >
+                            <div>
+                                <a class="cart_jian" href="javascript:void(0);" ng-click="cal_minus()">-</a>
+                                <input class="shopNum" type="text" value="1"/>
+                                <a class="cart_jia" href="javascript:void(0);">+</a>
+                            </div>
+                        </td>
+                        <td >￥<span class="td_totalprice">40</span></td>
+                        <td>删除</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <div>
+                                <div class="fl_l"><input type="radio"/></div>
+                                <div class="fl_l shopping_img"><img src="../images/1a030b6419099cdbb2e6283ead0f78b4.png"/></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="shopping_info">
+                                <span>产品名</span>
+                                <p>这里是规格信息值保留一定的字段显示。。。</p>
+                            </div>
+                        </td>
+                        <td >￥<span class="td_price">40</span></td>
+                        <td >
+                            <div>
+                                <a class="cart_jian" href="javascript:void(0);" ng-click="cal_minus()">-</a>
+                                <input class="shopNum" type="text" value="1"/>
+                                <a class="cart_jia" href="javascript:void(0);">+</a>
+                            </div>
+                        </td>
+                        <td >￥<span class="td_totalprice">40</span></td>
+                        <td>删除</td>
                     </tr>
+
                 </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>
+                            <div>
+                                <div class="fl_l"><input class="totl" type="radio"/></div>
+                                已选<span class="class_num">0</span>项
+                            </div>
+                        </td>
+                        <td>清空失效</td>
+                        <td>
+                            <div class="shopping_info">
+                                <span>商品合计：<span>0</span></span>
+                                <span>邮费：<span>0</span></span>
+                            </div>
+                        </td>
+
+                        <td colspan="2">
+                            总计：￥0
+                        </td>
+                        <td><buttom>结算</buttom></td>
+                    </tr>
+                </tfoot>
             </table>
 
         </div>

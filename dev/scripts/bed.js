@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "<header>    <div class=\"head clear\">        {{if !stuts}}        <div id=\"login\">            <i>&#xe646;</i>            <span>登录</span>        </div>        <div id=\"register\">            注册        </div>        {{else}}        <div id=\"user\">            <span>{{telephone}}</span>            <ul>                <li><a>账户中心</a></li>                <li><a>我的订单</a></li>                <li><a>我的收藏</a></li>                <li><a>地址管理</a></li>                <li><a>退出登录</a></li>            </ul>        </div>        <div id=\"cart\">            <i>&#xe63f;</i>            <span>购物车</span>        </div>        {{/if}}    </div></header><nav>    <div class=\"nav\">        <div id=\"logo\">            <img src=\"./images/logo.png\" alt=\"\">        </div>        <div class=\"search\">            <input type=\"text\" placeholder=\"沙发\">            <i>&#xe651;</i>        </div>        <ul class=\"clear\">            <li class=\"active\">首页</li>            <li>家具</li>            <li>床品</li>            <li>家饰</li>            <li>布艺软装</li>            <li>收纳</li>            <li>新品</li>        </ul>    </div>    </nav>"
+module.exports = "<header>    <div class=\"head clear\">        {{if !stuts}}        <div id=\"login\">            <i>&#xe646;</i>            <span>登录</span>        </div>        <div id=\"register\">            注册        </div>        {{else}}        <div id=\"user\">            <span>{{telephone}}</span>            <ul>                <li><a>账户中心</a></li>                <li><a>我的订单</a></li>                <li><a>我的收藏</a></li>                <li><a>地址管理</a></li>                <li><a>退出登录</a></li>            </ul>        </div>        <div id=\"cart\">            <i>&#xe63f;</i>            <a href=\"shoppingcart.html\"><span>购物车</span></a>        </div>        {{/if}}    </div></header><nav>    <div class=\"nav\">        <div id=\"logo\">            <img src=\"./images/logo.png\" alt=\"\">        </div>        <div class=\"search\">            <input type=\"text\" placeholder=\"沙发\">            <i>&#xe651;</i>        </div>        <ul class=\"clear\">            <li class=\"active\"><a href=\"index.html\">首页</a></li>            <li><a href=\"furniture.html\">家具</a></li>            <li><a href=\"bed.html\">床品</a></li>            <li><a href=\"decoration.html\">家饰</a></li>            <li><a href=\"fabric.html\">布艺软装</a></li>            <li><a href=\"fabric.html\">收纳</a></li>            <li><a href=\"new_products.html\">新品</a></li>        </ul>    </div>    </nav>"
 
 /***/ }),
 /* 1 */
@@ -83,6 +83,12 @@ module.exports = "<footer>    甄选家居版权所有©2018</footer>"
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"layer\">    <div class=\"lr\">        <div class=\"lr_logo\"><img src=\"../../images/lr_logo.png\"/></div>        <div class=\"lr_close\"></div>        <div class=\"lr_title\">            <div class=\"lr_logbtn fl_l now\">                <button>登录</button>            </div>            <div class=\"lr_resbtn fl_r\">                <button>注册</button>            </div>        </div>        <div class=\"lr_login\">            <form >                <div>                    <input id=\"log_usn\" class=\"usn\" type=\"text\" name=\"usn\" placeholder=\"请输入手机号\"/>                </div>                <div>                    <input id=\"log_pwd\" class=\"pwd\" type=\"password\" name=\"pwd\" placeholder=\"请输入密码\"/>                </div>                <button class=\"login_btn\">登录</button>            </form>        </div>        <div class=\"lr_res\">            <form >                <!--method=\"post\" action=\"/api/user/register\"-->                <div>                    <input id=\"reg_usn\" class=\"usn\" type=\"text\" name=\"telephone\" placeholder=\"请输入手机号\"/>                </div>                <div>                    <input class=\"code\" type=\"text\" name=\"code\" placeholder=\"请输入验证码\" disabled/>                    <input class=\"code_btn\" type=\"button\"value=\"获取手机验证码\"/>                </div>                <div>                    <input id=\"reg_pwd\" class=\"pwd\" type=\"password\" name=\"password\" placeholder=\"请输入密码\"/>                </div>                <button class=\"res_btn\">注册</button>            </form>        </div>        <!--<div class=\"lr_register\">-->        <!--</div>-->    </div></div>"
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports) {
 
 const loginAndResgister = {
@@ -126,9 +132,122 @@ const loginAndResgister = {
 module.exports = loginAndResgister
 
 /***/ }),
-/* 4 */,
-/* 5 */,
-/* 6 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+const headerTpl = __webpack_require__(0)
+const userModel = __webpack_require__(6)
+
+var wsCache = new WebStorageCache();
+
+//用户登录注册token获取存储
+const userLRController = {
+    LogRes(){
+        $('.res_btn').on('click',async() => {
+            event.preventDefault()
+            let {telephone, password} = {
+                telephone: $('#reg_usn').val(),
+                password: $('#reg_pwd').val()
+            }
+            let option = {
+                telephone,
+                password,
+            }
+            let result = await userModel.sign(option,'register')
+            if(result.ret){
+                alert('注册成功！切换到登录窗口。')
+                // $(".lr").find('input').val('');
+                // $('#')
+
+            }else{
+                alert(result.errmsg)
+            }
+        })
+
+        $('.login_btn').on('click', async function(){
+            event.preventDefault()
+            let {telephone, password} = {
+                telephone: $('#log_usn').val(),
+                password: $('#log_pwd').val()
+            }
+            console.log({telephone, password})
+            // let result = await userModel.sign({telephone, password},'login')
+            let stuts = true
+            wsCache.set('telephone', {telephone,stuts})
+            userLRController.renderHeader({telephone,stuts})
+
+            // if(result.ret){
+            //     alert(result.data.msg)
+            //     let stuts = result.ret
+            //     // wsCache.set('token', result.data.token)
+            //     // renderHeader({telephone,stuts})
+            // }else{
+            //     alert(result.errmsg)
+            // }
+
+
+        }.bind(this))
+    },
+
+    //登录判定
+    usersAuthentication(){
+        var storage = window.localStorage;
+        if(storage.telephone){
+            console.log('storage',)
+            var header = template.render(headerTpl, wsCache.get('telephone'))
+        }else{
+            console.log('NOTstorage')
+            var header = template.render(headerTpl, {telephone: '', stuts:false})
+        }
+        $("#header").html(header)
+    },
+
+
+
+    renderHeader({telephone, stuts}) {
+        console.log('555')
+        let header = template.render(headerTpl, {
+            telephone,
+            stuts
+        })
+        console.log(header)
+        $("#header").html(header)
+    },
+}
+
+
+
+module.exports = userLRController
+
+
+
+
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = {
+
+    sign(data,url){
+        console.log(JSON.stringify(data))
+        return $.ajax({
+            url: '/ceshi/api/user/' + url,
+
+            contentType: "application/json",
+            type: 'post',
+            data: JSON.stringify(data),
+
+            success: (result) => {
+                return result
+            }
+        })
+    }
+}
+
+/***/ }),
 /* 7 */,
 /* 8 */,
 /* 9 */,
@@ -147,24 +266,26 @@ module.exports = loginAndResgister
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const logRes = __webpack_require__(3)
-
 const indexTpl = __webpack_require__(1)
 const headerTpl = __webpack_require__(0)
 const footerTpl = __webpack_require__(2)
-// const newTpl = require("./views/new.html")
+const logresTpl = __webpack_require__(3)
+const logRes = __webpack_require__(4)
+const userController = __webpack_require__(5)
 
 const bedController = __webpack_require__(23)
 
 $("#root").html(indexTpl)
 
+userController.usersAuthentication()
 
 ;(async () => {
     let html = await bedController.render()
-    $(".container").html(headerTpl + html + footerTpl)
 
+    $("#container").html(html + footerTpl + logresTpl)
 })()
 logRes.lr()
+userController.LogRes();
 
 /***/ }),
 /* 23 */

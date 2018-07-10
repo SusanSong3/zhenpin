@@ -19,7 +19,7 @@ gulp.task('server', () => {
   return gulp.src('./dev')
     .pipe(server({
       host: 'localhost',
-      port: 8000,
+      port: 8001,
       livereload: true,
       directoryListing: {
         enable: true,
@@ -28,7 +28,15 @@ gulp.task('server', () => {
       middleware: [
         proxy('/api', {
           target: 'http://localhost:9000',
+          //   target: '10.9.166.32:8080/api',
           changeOrigin: true
+        }),
+        proxy('/ceshi', {
+            target: 'http://10.9.164.156:8080/',
+              changeOrigin: true,
+              pathRewrite: {
+                  '^/ceshi': ''
+              }
         }),
         // proxy('/plate', {
         //   target: 'http://m.banggo.com',
@@ -64,8 +72,8 @@ gulp.task('js', () => {
         'decoration': './src/scripts/decoration.js',
         'bed': './src/scripts/bed.js',
         'fabric': './src/scripts/fabric.js',
-        'item': './src/scripts/item.js',
-        'cart': './src/scripts/cart.js',
+        'userhome': './src/scripts/userhome.js',
+        'shoppingcart': './src/scripts/shoppingcart.js',
       },
       output: {
         filename: '[name].js'

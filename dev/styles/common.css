@@ -54,13 +54,3 @@ a, input {
   float: right; }
 
 /*------面包屑导航------*/
-.home_breadcrumbs {
-  padding-top: 56px; }
-  .home_breadcrumbs ul {
-    color: #666; }
-    .home_breadcrumbs ul li {
-      float: left;
-      padding-right: 18px; }
-      .home_breadcrumbs ul li a {
-        color: #666;
-        padding-left: 12px; }

@@ -4,15 +4,20 @@ const footerTpl = require("./views/footer.html")
 // const newTpl = require("./views/new.html")
 const logresTpl = require("./views/logres.html")
 const logRes = require("./utils/logRes")
+const userController = require("./controllers/userLR.controller")
+
 const decorationController = require('./controllers/decoration.controller')
+
+
 
 $("#root").html(indexTpl)
 
+userController.usersAuthentication()
 
 ;(async () => {
     let html = await decorationController.render()
-    $(".container").html(headerTpl + html + footerTpl)
-    logRes.lr()
+    $("#container").html(html + footerTpl + logresTpl)
 })()
 
-
+logRes.lr()
+userController.LogRes();

@@ -214,18 +214,20 @@ a,input{outline:none;border:0;}
     }
 }
 /*------面包屑导航------*/
-.home_breadcrumbs{
-    padding-top: 56px;
-    ul{
-        color:#666;
-        li{
-            float: left;
-            padding-right: 18px;
-
-            a{
-                color:#666;
-                padding-left: 12px;
+@mixin breadNav{
+    
+        padding-top: 56px;
+        ul{
+            color:#666;
+            li{
+                float: left;
+                padding-right: 18px;
+    
+                a{
+                    color:#666;
+                    padding-left: 12px;
+                }
             }
         }
-    }
+    
 }

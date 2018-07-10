@@ -1,6 +1,7 @@
 
 const headerTpl = require("../views/header.html")
 const userModel = require('../models/userLR.model')
+
 var wsCache = new WebStorageCache();
 
 //用户登录注册token获取存储
@@ -51,6 +52,22 @@ const userLRController = {
 
         }.bind(this))
     },
+
+    //登录判定
+    usersAuthentication(){
+        var storage = window.localStorage;
+        if(storage.telephone){
+            console.log('storage',)
+            var header = template.render(headerTpl, wsCache.get('telephone'))
+        }else{
+            console.log('NOTstorage')
+            var header = template.render(headerTpl, {telephone: '', stuts:false})
+        }
+        $("#header").html(header)
+    },
+
+
+
     renderHeader({telephone, stuts}) {
         console.log('555')
         let header = template.render(headerTpl, {
