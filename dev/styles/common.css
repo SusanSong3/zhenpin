@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body, html {
+  height: auto; }
+
+#root {
+  height: auto; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/iconfonts/iconfont.woff") format("woff"), url("/iconfonts/iconfont.ttf") format("truetype"), url("/iconfonts/iconfont.svg") format("svg"); }
+
+body {
+  overflow-x: hidden; }
+
+body, h1, h3, h4, h2, h5, h6, ul, ol, p, fieldset, dd, dl, input, textarea, option, hr, td {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+a, input {
+  outline: none;
+  border: 0; }
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+.clear {
+  zoom: 1; }
+
+.fl_l {
+  float: left; }
+
+.fl_r {
+  float: right; }
+
+/*------面包屑导航------*/
+.home_breadcrumbs {
+  padding-top: 56px; }
+  .home_breadcrumbs ul {
+    color: #666; }
+    .home_breadcrumbs ul li {
+      float: left;
+      padding-right: 18px; }
+      .home_breadcrumbs ul li a {
+        color: #666;
+        padding-left: 12px; }

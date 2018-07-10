@@ -1,0 +1,38 @@
+#furniture{
+    main{
+        width: 1200px;
+        margin: 0 auto;
+        height:auto;
+        padding-top: 10px;
+        margin-bottom: 40px;
+        .swiper-container{
+            width: 100%;
+            height: 386px;
+            margin: 0 auto;
+        } 
+        .title{
+            text-align: center;
+            line-height: 58px;
+            height: 58px;
+            display: block;
+            font-size: 22px;
+            border-bottom: 1px solid #c1c1c1;
+        }
+        .sofa_container{
+            margin-top: 27px;
+            margin-bottom: 20px;
+            @include page_render;
+        }
+        .seats_container{
+            margin-top: 27px;
+            height: auto;
+            @include page_render;
+        }
+        .bedCabnit_container{
+            margin-top: 27px;
+            height: auto;
+            @include page_render;
+
+        }
+    }
+}

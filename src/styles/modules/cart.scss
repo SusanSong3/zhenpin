@@ -1,0 +1,164 @@
+#cart{
+    main{
+        width: 1200px;
+        margin: 0 auto;
+        height:2000px;
+        background: white;
+        nav{
+            @include breadNav;
+        }
+        section{
+            #title{
+                border-bottom: 1px solid #ccc;
+                font-size: 14px;
+                color: #666;
+                line-height: 30px;
+                height: 30px;;
+                ul{
+                    li{
+                        float: left;
+                        &:nth-of-type(1){
+                            position: relative;
+                            padding-left: 26px;
+                            padding-right: 168px;
+                            span{
+                                position: absolute;
+                                display: block;
+                                height: 20px;
+                                width: 20px;
+                                top: 0;
+                                left: 14px;
+                                border-radius: 50%;
+                                background: white;
+                                border: 2px solid #a1a1a1;
+                            }
+                            input{
+                                display: inline-block;
+                                margin-right: 13px;
+                                background: transparent;
+                                border: none;
+                            }
+                        }
+                        &:nth-of-type(2){
+                            padding-right: 178px;
+                        }
+                        &:nth-of-type(3){
+                            padding-right: 163px;
+                        }
+                        &:nth-of-type(4){
+                            padding-right: 192px;
+                        }
+                        &:nth-of-type(5){
+                            padding-right: 178px;
+                        }
+                        &:nth-of-type(6){
+                            padding-right: 72px;
+                        }
+                    }
+                }
+            }
+            #cart-list{
+                width: 100%;
+                height: auto;
+                .item{
+                    box-sizing: border-box;
+                    border-bottom: 1px dotted #ccc; 
+                    height: 150px;;
+                    // background:pink;
+                    ul{
+                        
+                        li{
+                            position: relative;
+                            height: 150px;;
+                            color: #666;
+                            box-sizing: border-box;
+                            float: left;
+                            &.inputBtn{
+                                width: 93px;
+                                height: 150px;
+                                line-height: 150px;
+                                padding-left: 14px;
+                            } 
+                            &.item_img{
+                                width: 155px;
+                                
+                                padding-right: 42px;
+                                div{
+                                    margin-top: 20px; 
+                                    width: 110px;
+                                    height: 110px;
+                                    position: relative;
+                                    img{
+                                        background: #e1e1e1;
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        top: 50%;
+                                        left:50%;
+                                        transform: translate(-50%,-50%);
+                                    }
+                                }
+                                
+                            }
+                            &.item_info{
+                                width: 234px;
+                                p{
+                                    font-size: 14px;
+                                    &:nth-of-type(1){
+                                        padding-top: 30px;
+                                        padding-bottom: 19px;
+                                    }
+                                }
+                            }
+                            &.item_singlePrice{
+                                width: 171px;
+                                padding-top: 42px;
+                                
+                            }
+                            &.item_count{
+                                width: 240px;
+                                padding-top: 42px;
+                                span{
+                                    box-sizing: border-box;
+                                    display: inline-block;
+                                }
+                                .reduce{
+                                    width: 20px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    border: 1px solid #666;
+                                    text-align: center;
+                                }
+                                .singlePrice{
+                                    display: inline-block;
+                                    width: 30px;
+                                    text-align: center;
+                                }
+                                .add{
+                                    width: 20px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    border: 1px solid #666;
+                                    text-align: center;
+                                }
+                            }
+                            &.count{
+                                width: 205px;
+                                padding-top: 42px;
+                                
+                            }
+                            &.operator{
+                                width: 100px;
+                                padding-top: 42px;
+                                
+                            }
+                        }
+                        
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}

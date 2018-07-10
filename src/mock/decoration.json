@@ -1,0 +1,177 @@
+{
+    "ret": true,
+    "errmsg": "",
+    "data": {
+        "Category": {
+            "page": {
+                "pageStart": 0,
+                "pageEnd":19,
+                "pageList":1,
+                "pageNum":20
+            },
+            "productList": {
+                "0":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "1":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "2":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "3":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "4":{
+                    "pid": "n005" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/bbe0d25d3382de885960ca4d939c096d.png" ,
+                    "productName": "韵白梳妆台",
+                    "marketPrice": "1999",
+                    "productInfo": "精巧设计，用心之作"
+                },
+                "5":{
+                    "pid": "n006" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/3943ca82e7a26e355581632d0940f561.png" ,
+                    "productName": "韵白系列梳妆镜",
+                    "marketPrice": "399",
+                    "productInfo": "美观典雅，创新设计"
+                },
+                "6":{
+
+                    "pid": "n007" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/fc37d245b30740c5e65bb1b20f14781a.png" ,
+                    "productName": "韵白系列桌椅组合",
+                    "marketPrice": "5999",
+                    "productInfo": "高档典雅，经典组合"
+                },
+                "7":{
+                    "pid": "n008" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/7831678cc6e8e2c364678b379e615411.png" ,
+                    "productName": "韵白电视柜+茶几组合",
+                    "marketPrice": "3999",
+                    "productInfo": "客厅组合，经典搭配"
+                },
+                "8":{
+                    "pid": "n009" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/a719a91804977f32389baa244ea388b3.png" ,
+                    "productName": "仕趣系列 茶几",
+                    "marketPrice": "1899",
+                    "productInfo": "异形设计 圆润流线"
+                },
+                "9":{
+                    "pid": "n010" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/a413440ed75d0992036e7b4f6b7a67c8.png" ,
+                    "productName": "仕趣系列 餐台",
+                    "marketPrice": "2599",
+                    "productInfo": "烤漆台面 别致造型"
+                },
+                "10":{
+                    "pid": "n011" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/ecf00431650e04a48d59ebd6d457d65d.png" ,
+                    "productName": "间格系列1.5米床",
+                    "marketPrice": "3299",
+                    "productInfo": "扎实用料 环保舒适"
+                },
+                "11":{
+                    "pid": "n012" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b524446a7509f16e583c78825b5f6daa.png" ,
+                    "productName": "间格系列1.8米电视柜",
+                    "marketPrice": "2699",
+                    "productInfo": "创新喷粉工艺 零空气污染物"
+                },
+                "12":{
+                    "pid": "n013" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/2e5c458901c72ee6fce43c046a9cea53.png" ,
+                    "productName": "3D透气高端弹簧双垫",
+                    "marketPrice": "3899",
+                    "productInfo": "仅售供应商建议价的1/6"
+                },
+                "13":{
+                    "pid": "n014" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/c08a774e16304cb201ca1c266ab6690e.png" ,
+                    "productName": "秋冬保暖加厚澳洲羊毛被",
+                    "marketPrice": "499",
+                    "productInfo": "臻品澳洲进口羊毛"
+                },
+                "14":{
+                    "pid": "n015" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f1a570939dfc9c688cd17dc25463da07.png" ,
+                    "productName": "保暖嫩肤蚕丝羽绒子母被",
+                    "marketPrice": "1999",
+                    "productInfo": "臻品澳洲进口羊毛"
+                },
+                "15":{
+                    "pid": "n016" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/bf42027b16a3fe26817334986579b237.png" ,
+                    "productName": "可裸睡纯棉便携睡袋",
+                    "marketPrice": "129",
+                    "productInfo": "轻巧便携，亲肤裸睡"
+                },
+                "16":{
+                    "pid": "n017" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/99d60e0a69226349f4ab1bb86837f0f5.png" ,
+                    "productName": "铜铁时代台灯",
+                    "marketPrice": "159",
+                    "productInfo": "铸铁打造，金属元素"
+                },
+                "17":{
+                    "pid": "n018" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/df8468c35365fe8c57222841a743d07a.png" ,
+                    "productName": "美式实木相框",
+                    "marketPrice": "19.9",
+                    "productInfo": "美式经典，新西兰进口松木"
+                },
+                "18":{
+                    "pid": "n019" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/df8468c35365fe8c57222841a743d07a.png" ,
+                    "productName": "美式经典实木照片墙",
+                    "marketPrice": "199",
+                    "productInfo": "新西兰进口原木，原木之风"
+                },
+                "19":{
+                    "pid": "n020" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/519206950a8e2ef8e2ec776e87a63d97.png" ,
+                    "productName": "极简实木相框",
+                    "marketPrice": "19",
+                    "productInfo": "质感榉木，极简纯粹"
+                }
+            }
+        }
+    }
+}

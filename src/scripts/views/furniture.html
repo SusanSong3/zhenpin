@@ -1,0 +1,61 @@
+<main id="furniture" class="clear">
+        <main>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="###"><img src="./images/furniture/1.png" alt=""></a></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <p class="title">沙发</p>
+            <div class="sofa_container clear">
+                <ul>
+                    {{each sofa}}
+                    <li pid="{{$value.pid}}">
+                        <a href="###">
+                            <img src="{{$value.imgUrl}}" alt="">
+                        </a>
+                        <p>{{$value.productName}}</p>
+                        <b>¥<span>{{$value.marketPrice}}</span></b>
+                        <i></i>
+                        <h6>{{$value.productInfo}}</h6>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <p class="title">座椅</p>
+            <div class="seats_container clear">
+                <ul>
+                    {{each seats}}
+                    <li pid="{{$value.pid}}">
+                        <a href="###">
+                            <img src="{{$value.imgUrl}}" alt="">
+                        </a>
+                        <p>{{$value.productName}}</p>
+                        <b>¥<span>{{$value.marketPrice}}</span></b>
+                        <i></i>
+                        <h6>{{$value.productInfo}}</h6>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <p class="title">床柜</p>
+            <div class="bedCabnit_container clear">
+                <ul>
+                    {{each bedCabnit}}
+                    <li pid="{{$value.pid}}">
+                        <a href="###">
+                            <img src="{{$value.imgUrl}}" alt="">
+                        </a>
+                        <p>{{$value.productName}}</p>
+                        <b>¥<span>{{$value.marketPrice}}</span></b>
+                        <i></i>
+                        <h6>{{$value.productInfo}}</h6>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </main>
+    </main>

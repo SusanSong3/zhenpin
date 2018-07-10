@@ -1,0 +1,106 @@
+.layer{
+  position: fixed;
+  display: none;
+  width:100%;
+  height: 100%;
+  top: 0;
+  bottom:0;
+  background: rgba(0,0,0,0.5);
+  z-index: 99;
+}
+.lr{
+  position: absolute;
+  width: 416px;
+  height: 356px;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #FFF;
+}
+.lr_logo{
+  padding:16px 0 0 150px;
+}
+.lr_title{
+  padding: 0 27px;
+  overflow: hidden;
+  margin-top:31px;
+  button{
+    background:none;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+  }
+}
+
+
+.lr_logbtn,.lr_resbtn{
+  width: 50%;
+  text-align: center;
+}
+.lr_activ{
+  color:#865C30!important;
+}
+
+.lr_res{display: none}
+.lr_login,.lr_res{
+  height: 242px;
+  padding: 10px 55px 0 55px;
+  form{height: 179px;}
+  div{border-bottom: 1px solid #E5E5E5;overflow: hidden}
+
+  input{
+    width: 100%;
+    height: 12px;
+    padding: 6px 0;
+    text-indent: 6px;
+    margin-top: 29px;
+    font-size: 12px;
+  }
+  input.code{float: left;width: 70%}
+  input.code_btn{
+    float: right;
+    width: 30%;
+    height: 24px;
+    color:#999;
+    background: #FFF;
+    cursor: pointer;
+  }
+  input::-webkit-input-placeholder{
+    color: #999
+  }
+  input::-ms-input-placeholder{
+    color: #999
+  }
+  input::-moz-placeholder{
+    color: #999
+  }
+}
+
+.login_btn,.res_btn{
+  width: 100%;
+  height: 44px;
+  font-size: 16px;
+  color:#FFF;
+  line-height: 44px;
+  text-align: center;
+  border: 0;
+  border-radius: 6px;
+  background: #D0D0D0;
+  outline: none;
+  margin-top: 17px;
+}
+.lr_close{
+  width:15px;
+  height: 15px;
+  position: absolute;
+  top: 9px;
+  right:11px;
+  background: url("../../images/close.jpg") no-repeat 100%;
+  background-size: 100%;
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+<header>
+    <div class="head clear">
+        {{if !stuts}}
+        <div id="login">
+            <i>&#xe646;</i>
+            <span>登录</span>
+        </div>
+        <div id="register">
+            注册
+        </div>
+        {{else}}
+        <div id="user">
+            <span>{{telephone}}</span>
+            <ul>
+                <li><a>账户中心</a></li>
+                <li><a>我的订单</a></li>
+                <li><a>我的收藏</a></li>
+                <li><a>地址管理</a></li>
+                <li><a>退出登录</a></li>
+            </ul>
+        </div>
+        <div id="cart">
+            <i>&#xe63f;</i>
+            <span>购物车</span>
+        </div>
+        {{/if}}
+    </div>
+</header>
+<nav>
+    <div class="nav">
+        <div id="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="沙发">
+            <i>&#xe651;</i>
+        </div>
+        <ul class="clear">
+            <li class="active">首页</li>
+            <li>家具</li>
+            <li>床品</li>
+            <li>家饰</li>
+            <li>布艺软装</li>
+            <li>收纳</li>
+            <li>新品</li>
+        </ul>
+    </div>
+    
+</nav>

@@ -1,0 +1,372 @@
+{
+    "ret": true,
+    "errmsg": "",
+    "data": {
+        "Category": {
+            "page": {
+                "pageStart": 0,
+                "pageEnd":19,
+                "pageList":1,
+                "pageNum":20
+            },
+            "sofa": {
+                "0":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "1":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "2":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "3":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "4":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "5":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "6":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "7":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "8":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "9":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "10":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "11":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                }
+            },
+            "seats": {
+                "0":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "1":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "2":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "3":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "4":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "5":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "6":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "7":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "8":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "9":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "10":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "11":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                }
+            },
+            "bedCabnit": {
+                "0":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "1":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "2":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "3":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "4":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "5":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "6":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "7":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "8":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "9":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "10":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "11":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "12":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "13":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "14":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "15":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "16":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "17":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "18":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "19":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                }
+            }
+        }
+    }
+}
