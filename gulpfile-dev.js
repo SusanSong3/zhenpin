@@ -74,6 +74,7 @@ gulp.task('js', () => {
         'fabric': './src/scripts/fabric.js',
         'userhome': './src/scripts/userhome.js',
         'shoppingcart': './src/scripts/shoppingcart.js',
+        // 'addressManage': './src/scripts/addressManage.js',
       },
       output: {
         filename: '[name].js'

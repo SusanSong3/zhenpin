@@ -1,5 +1,7 @@
 // const userModel = require('../models/userMain.model')
 const userHomeTpl = require('../views/userhome.html')
+const addressManageTpl = require('../views/addressManage.html')
+const userhomeSideTpl = require('../views/userhomeSide.html')
 const userController = {
     async render(){
         // let result = await userModel.find()
@@ -7,7 +9,7 @@ const userController = {
         // let fresult = result.data.Category
         // console.log(fresult);
         // let html = template.render(userHomeTpl,fresult)
-        let html = template.render(userHomeTpl)
+        let html = template.render(addressManageTpl)
         // console.log(html);
         return html
     },

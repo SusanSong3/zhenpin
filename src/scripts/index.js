@@ -1,4 +1,3 @@
-
 const indexTpl = require("./views/index.html")
 const headerTpl = require("./views/header.html")
 const footerTpl = require("./views/footer.html")
@@ -11,8 +10,6 @@ const userController = require("./controllers/userLR.controller")
 const commonController = require("./utils/commonController")
 
 var wsCache = new WebStorageCache();
-
-
 
 // let storage = wsCache.get(telephone)
 var storage=window.localStorage;

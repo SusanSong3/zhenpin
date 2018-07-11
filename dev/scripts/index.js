@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "<header>    <div class=\"head clear\">        {{if !stuts}}        <div id=\"login\">            <i>&#xe646;</i>            <span>登录</span>        </div>        <div id=\"register\">            注册        </div>        {{else}}        <div id=\"user\">            <span>{{telephone}}</span>            <ul>                <li><a>账户中心</a></li>                <li><a>我的订单</a></li>                <li><a>我的收藏</a></li>                <li><a>地址管理</a></li>                <li><a>退出登录</a></li>            </ul>        </div>        <div id=\"cart\">            <i>&#xe63f;</i>            <a href=\"shoppingcart.html\"><span>购物车</span></a>        </div>        {{/if}}    </div></header><nav>    <div class=\"nav\">        <div id=\"logo\">            <img src=\"./images/logo.png\" alt=\"\">        </div>        <div class=\"search\">            <input type=\"text\" placeholder=\"沙发\">            <i>&#xe651;</i>        </div>        <ul class=\"clear\">            <li class=\"active\"><a href=\"index.html\">首页</a></li>            <li><a href=\"furniture.html\">家具</a></li>            <li><a href=\"bed.html\">床品</a></li>            <li><a href=\"decoration.html\">家饰</a></li>            <li><a href=\"fabric.html\">布艺软装</a></li>            <li><a href=\"fabric.html\">收纳</a></li>            <li><a href=\"new_products.html\">新品</a></li>        </ul>    </div>    </nav>"
+module.exports = "<header>    <div class=\"head clear\">        {{if !stuts}}        <div id=\"login\">            <i>&#xe646;</i>            <span>登录</span>        </div>        <div id=\"register\">            注册        </div>        {{else}}        <div id=\"user\">            <span>{{telephone}}</span>            <ul>                <li><a href=\"userhome.html\">账户中心</a></li>                <li><a>我的订单</a></li>                <li><a>我的收藏</a></li>                <li><a>地址管理</a></li>                <li><a>退出登录</a></li>            </ul>        </div>        <div id=\"cart\">            <i>&#xe63f;</i>            <a href=\"shoppingcart.html\"><span>购物车</span></a>        </div>        {{/if}}    </div></header><nav>    <div class=\"nav\">        <div id=\"logo\">            <img src=\"./images/logo.png\" alt=\"\">        </div>        <div class=\"search\">            <input type=\"text\" placeholder=\"沙发\">            <i>&#xe651;</i>        </div>        <ul class=\"clear\">            <li class=\"active\"><a href=\"index.html\">首页</a></li>            <li><a href=\"furniture.html\">家具</a></li>            <li><a href=\"bed.html\">床品</a></li>            <li><a href=\"decoration.html\">家饰</a></li>            <li><a href=\"fabric.html\">布艺软装</a></li>            <li><a href=\"fabric.html\">收纳</a></li>            <li><a href=\"new_products.html\">新品</a></li>        </ul>    </div>    </nav>"
 
 /***/ }),
 /* 1 */
@@ -251,7 +251,6 @@ module.exports = {
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-
 const indexTpl = __webpack_require__(1)
 const headerTpl = __webpack_require__(0)
 const footerTpl = __webpack_require__(2)
@@ -264,8 +263,6 @@ const userController = __webpack_require__(5)
 const commonController = __webpack_require__(9)
 
 var wsCache = new WebStorageCache();
-
-
 
 // let storage = wsCache.get(telephone)
 var storage=window.localStorage;
