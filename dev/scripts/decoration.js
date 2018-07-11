@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 19);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -259,7 +259,8 @@ module.exports = {
 /* 15 */,
 /* 16 */,
 /* 17 */,
-/* 18 */
+/* 18 */,
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const indexTpl = __webpack_require__(1)
@@ -270,7 +271,7 @@ const logresTpl = __webpack_require__(3)
 const logRes = __webpack_require__(4)
 const userController = __webpack_require__(5)
 
-const decorationController = __webpack_require__(19)
+const decorationController = __webpack_require__(20)
 
 
 
@@ -287,11 +288,11 @@ logRes.lr()
 userController.LogRes();
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const decorationModel = __webpack_require__(20)
-const decorationTpl = __webpack_require__(21)
+const decorationModel = __webpack_require__(21)
+const decorationTpl = __webpack_require__(22)
 const decorationController = {
     async render(){
         let result = await decorationModel.find()
@@ -307,7 +308,7 @@ const decorationController = {
 module.exports = decorationController
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -321,7 +322,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = "<main id=\"decoration\" class=\"clear\">    <main>        <div class=\"swiper-container\">            <div class=\"swiper-wrapper\">                <div class=\"swiper-slide\"><a href=\"###\"><img src=\"./images/furniture/1.png\" alt=\"\"></a></div>                <div class=\"swiper-slide\"></div>                <div class=\"swiper-slide\"></div>            </div>            <!-- 如果需要分页器 -->            <div class=\"swiper-pagination\"></div>        </div>        <p class=\"title\">家饰</p>        <div class=\"decoration_container clear\">            <ul>                {{each productList}}                <li pid=\"{{$value.pid}}\">                    <a href=\"###\">                        <img src=\"{{$value.imgUrl}}\" alt=\"\">                    </a>                    <p>{{$value.productName}}</p>                    <b>¥<span>{{$value.marketPrice}}</span></b>                    <i></i>                    <h6>{{$value.productInfo}}</h6>                </li>                {{/each}}            </ul>        </div>    </main></main>"

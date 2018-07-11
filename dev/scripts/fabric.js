@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 26);
+/******/ 	return __webpack_require__(__webpack_require__.s = 27);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -267,7 +267,8 @@ module.exports = {
 /* 23 */,
 /* 24 */,
 /* 25 */,
-/* 26 */
+/* 26 */,
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const indexTpl = __webpack_require__(1)
@@ -278,7 +279,7 @@ const logresTpl = __webpack_require__(3)
 const logRes = __webpack_require__(4)
 const userController = __webpack_require__(5)
 
-const fabricController = __webpack_require__(27)
+const fabricController = __webpack_require__(28)
 
 
 $("#root").html(indexTpl)
@@ -294,11 +295,11 @@ logRes.lr()
 userController.LogRes();
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const fabricModel = __webpack_require__(28)
-const fabricTpl = __webpack_require__(29)
+const fabricModel = __webpack_require__(29)
+const fabricTpl = __webpack_require__(30)
 const fabricController = {
     async render(){
         let result = await fabricModel.find()
@@ -314,7 +315,7 @@ const fabricController = {
 module.exports = fabricController
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -328,7 +329,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports) {
 
 module.exports = "<main id=\"fabric\" class=\"clear\">    <main>        <div class=\"swiper-container\">            <div class=\"swiper-wrapper\">                <div class=\"swiper-slide\"><a href=\"###\"><img src=\"./images/furniture/1.png\" alt=\"\"></a></div>                <div class=\"swiper-slide\"></div>                <div class=\"swiper-slide\"></div>            </div>            <!-- 如果需要分页器 -->            <div class=\"swiper-pagination\"></div>        </div>        <p class=\"title\">布艺软装</p>        <div class=\"fabric_container clear\">            <ul>                {{each productList}}                <li pid=\"{{$value.pid}}\">                    <a href=\"###\">                        <img src=\"{{$value.imgUrl}}\" alt=\"\">                    </a>                    <p>{{$value.productName}}</p>                    <b>¥<span>{{$value.marketPrice}}</span></b>                    <i></i>                    <h6>{{$value.productInfo}}</h6>                </li>                {{/each}}            </ul>        </div>    </main></main>"

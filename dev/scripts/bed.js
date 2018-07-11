@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 22);
+/******/ 	return __webpack_require__(__webpack_require__.s = 23);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -263,7 +263,8 @@ module.exports = {
 /* 19 */,
 /* 20 */,
 /* 21 */,
-/* 22 */
+/* 22 */,
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const indexTpl = __webpack_require__(1)
@@ -273,7 +274,7 @@ const logresTpl = __webpack_require__(3)
 const logRes = __webpack_require__(4)
 const userController = __webpack_require__(5)
 
-const bedController = __webpack_require__(23)
+const bedController = __webpack_require__(24)
 
 $("#root").html(indexTpl)
 
@@ -288,11 +289,11 @@ logRes.lr()
 userController.LogRes();
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const bedModel = __webpack_require__(24)
-const bedTpl = __webpack_require__(25)
+const bedModel = __webpack_require__(25)
+const bedTpl = __webpack_require__(26)
 const bedController = {
     async render(){
         let result = await bedModel.find()
@@ -308,7 +309,7 @@ const bedController = {
 module.exports = bedController
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -322,7 +323,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = "<main id=\"bed\" class=\"clear\">    <main>        <div class=\"swiper-container\">            <div class=\"swiper-wrapper\">                <div class=\"swiper-slide\"><a href=\"###\"><img src=\"./images/furniture/1.png\" alt=\"\"></a></div>                <div class=\"swiper-slide\"></div>                <div class=\"swiper-slide\"></div>            </div>            <!-- 如果需要分页器 -->            <div class=\"swiper-pagination\"></div>        </div>        <p class=\"title\">床品</p>        <div class=\"bed_container clear\">            <ul>                {{each productList}}                <li pid=\"{{$value.pid}}\">                    <a href=\"###\">                        <img src=\"{{$value.imgUrl}}\" alt=\"\">                    </a>                    <p>{{$value.productName}}</p>                    <b>¥<span>{{$value.marketPrice}}</span></b>                    <i></i>                    <h6>{{$value.productInfo}}</h6>                </li>                {{/each}}            </ul>        </div>    </main></main>"

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -251,7 +251,8 @@ module.exports = {
 /* 7 */,
 /* 8 */,
 /* 9 */,
-/* 10 */
+/* 10 */,
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const indexTpl = __webpack_require__(1)
@@ -260,7 +261,7 @@ const footerTpl = __webpack_require__(2)
 const logresTpl = __webpack_require__(3)
 // const newTpl = require("./views/new.html")
 const logRes = __webpack_require__(4)
-const newController = __webpack_require__(11)
+const newController = __webpack_require__(12)
 const userController = __webpack_require__(5)
 
 
@@ -277,11 +278,11 @@ userController.LogRes();
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const newModel = __webpack_require__(12)
-const newTpl = __webpack_require__(13)
+const newModel = __webpack_require__(13)
+const newTpl = __webpack_require__(14)
 const newController = {
     async render(){
         let result = await newModel.find('/api/poslist')
@@ -297,7 +298,7 @@ const newController = {
 module.exports = newController
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -311,7 +312,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = "<main id=\"new\" class=\"clear\">    <main>        <div class=\"swiper-container\">            <div class=\"swiper-wrapper\">                <div class=\"swiper-slide\"><a href=\"###\"><img src=\"./images/new/banner.png\" alt=\"\"></a></div>                <div class=\"swiper-slide\"></div>                <div class=\"swiper-slide\"></div>            </div>            <!-- 如果需要分页器 -->            <div class=\"swiper-pagination\"></div>        </div>        <p class=\"title\">本期新品</p>        <div class=\"new_products_container clear\">            <ul>                {{each productList}}                <li pid=\"{{$value.pid}}\">                    <a href=\"###\">                        <img src=\"{{$value.imgUrl}}\" alt=\"\">                    </a>                    <p>{{$value.productName}}</p>                    <b>¥<span>{{$value.marketPrice}}</span></b>                    <i></i>                    <h6>{{$value.productInfo}}</h6>                </li>                {{/each}}            </ul>        </div>    </main></main>"

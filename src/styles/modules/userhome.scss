@@ -5,7 +5,7 @@
   margin: 0 auto;
   font-size: 14px;
   line-height: 18px;
-  a{color:#666}
+  // a{color:#666}
 }
 
 /*------面包屑导航------*/
@@ -82,8 +82,14 @@
       font-size: 16px;
       height: 30px;
       line-height: 30px;
-      color:#865C30;
+      margin-right: 50px;
+      color: #666;
+      &.active{
+        a{
+          color:#865C30;
+        }
       border-bottom: 1px solid #865C30;
+      }
     }
   }
 
