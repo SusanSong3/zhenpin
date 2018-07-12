@@ -2,7 +2,7 @@
     <span class="active"><a href="#/address">地址管理</a></span>
     <span><a href="###">新建地址</a></span>
 </div>
-<div id="address_manage">                         
+<div id="address_manage" style="display: none;">                         
     <div class="address_nav">
         <ul class="clear">
             <li>默认地址</li>
@@ -19,9 +19,49 @@
            <li class="address_detail">吉林省长春市绿园区</li>
            <li class="contact">234****1234</li>
            <li class="operate"><span id="edit">修改</span><span id="delete">删除</span></li>
-       </div>
+       </ul>
+       <ul class="address_item clear">
+            <li class="default_address"><input type="radio" name="address"></li>
+            <li class="master">宋三杯水</li>
+            <li class="address_detail">吉林省长春市绿园区</li>
+            <li class="contact">234****1234</li>
+            <li class="operate"><span id="edit">修改</span><span id="delete">删除</span></li>
+        </ul>
+        <ul class="address_item clear">
+            <li class="default_address"><input type="radio" name="address"></li>
+            <li class="master">宋三杯水</li>
+            <li class="address_detail">吉林省长春市绿园区</li>
+            <li class="contact">234****1234</li>
+            <li class="operate"><span id="edit">修改</span><span id="delete">删除</span></li>
+        </ul>
     </form>
 </div>
-<div id="new_address" style="display: none;">
-123
+<div id="new_address" style="display: block;">
+    <div class="position">
+        所在地区：
+        <select name="province" id="province">
+            <option value="">请选择</option>
+            <option value="北京市">北京市</option>
+            <option value="天津市">天津市</option>
+            <option value="重庆市">重庆市</option>
+            <option value="上海市">上海市</option>
+            <option value="上海市">吉林省</option>
+        </select>
+        <select name="city" id="city">
+            <option value="">请选择</option>
+            <option value="长春市">长春市</option>
+            <option value="吉林市">吉林市</option>
+            <option value="四平市">四平市</option>
+        </select>
+        <select name="zone" id="zone">
+            <option value="">请选择</option>
+            <option value="朝阳区">朝阳区</option>
+            <option value="绿园区">绿园区</option>
+            <option value="宽城区">宽城区</option>
+        </select>
+    </div>
+    <div class="address_detail">
+        详细地址：
+        <textarea name="address_detail" id="address_detail" cols=110 rows="4"></textarea>
+    </div>
 </div>

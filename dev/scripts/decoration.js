@@ -139,7 +139,7 @@ module.exports = loginAndResgister
 const headerTpl = __webpack_require__(0)
 const userModel = __webpack_require__(6)
 
-var wsCache = new WebStorageCache();
+const wsCache = new WebStorageCache();
 
 //用户登录注册token获取存储
 const userLRController = {
@@ -159,7 +159,6 @@ const userLRController = {
                 alert('注册成功！切换到登录窗口。')
                 // $(".lr").find('input').val('');
                 // $('#')
-
             }else{
                 alert(result.errmsg)
             }
@@ -175,7 +174,11 @@ const userLRController = {
             // let result = await userModel.sign({telephone, password},'login')
             let stuts = true
             wsCache.set('telephone', {telephone,stuts})
-            userLRController.renderHeader({telephone,stuts})
+            location.reload()
+            // userLRController.renderHeader({telephone,stuts})
+            // $(".layer input").val('');
+            // $(".layer").hide();
+
 
             // if(result.ret){
             //     alert(result.data.msg)
@@ -185,26 +188,35 @@ const userLRController = {
             // }else{
             //     alert(result.errmsg)
             // }
-
-
         }.bind(this))
     },
 
     //登录判定
-    usersAuthentication(){
+    async usersAuthentication(){
         var storage = window.localStorage;
         if(storage.telephone){
             console.log('storage',)
-            var header = template.render(headerTpl, wsCache.get('telephone'))
+            var header = await  template.render(headerTpl, wsCache.get('telephone'))
+            $("#header").html(header)
+            userLRController.userLaunch()
+            // $('.launch').on('click', function(){
+            //     console.log('123')
+            //     wsCache.delete('telephone');
+            //     window.location.replace("/index.html");
+            //     // var header = template.render(headerTpl, {telephone: '', stuts:false})
+            //     // $("#header").html(header)
+            // })
+
         }else{
             console.log('NOTstorage')
             var header = template.render(headerTpl, {telephone: '', stuts:false})
+            $("#header").html(header)
         }
-        $("#header").html(header)
+
+
     },
 
-
-
+    //----------头部渲染----------//
     renderHeader({telephone, stuts}) {
         console.log('555')
         let header = template.render(headerTpl, {
@@ -214,6 +226,17 @@ const userLRController = {
         console.log(header)
         $("#header").html(header)
     },
+    //----------退出登录----------//
+    userLaunch(){
+        $('.launch').on('click', function(){
+            console.log('123')
+            wsCache.delete('telephone');
+            location.reload();
+            // var header = template.render(headerTpl, {telephone: '', stuts:false})
+            // $("#header").html(header)
+        }.bind(this))
+    }
+
 }
 
 
