@@ -231,3 +231,94 @@ a,input{outline:none;border:0;}
         }
     
 }
+
+// 各种已付款 待付款 已完成订单
+@mixin orders{
+        ul{
+            li{
+                height: 284px;
+                width: 100%;
+                position: relative;
+                margin-bottom: 35px;
+                >P{
+                    font-size: 14px;
+                    color: #666;
+                    margin-bottom: 20px;
+                }
+                .order_state{
+                    position: absolute;
+                    right: 40px;
+                    top: 0;
+                    color: #666;
+                }
+                .order_info{
+                    position: relative;
+                    color: #666;
+                    
+                    img{
+                        width: 110px;
+                        height: 110px;
+                        background: #f1f1f1;
+                    }
+                    >p{
+                        position: absolute;
+                        top: 10px;
+                        left: 152px;
+                        >span{
+                            margin-right: 92px;
+                        }
+                    }
+                    >b{
+                        position: absolute;
+                        top: 44px;
+                        left: 152px;
+                    }
+                    i{
+                        position: absolute;
+                        top: 44px;
+                        right: 40px;
+                    }
+                    div{
+                        position: absolute;
+                        top: 100px;
+                        right: 40px;
+                    }
+                }
+                .operations{
+                    position: absolute;
+                    width: 900px;
+                    top: 165px;
+                    height: 120px;
+                    border-top: 1px dashed #ccc;
+                    border-bottom:  1px solid #ccc;
+                    p{
+                        position: absolute;
+                        right: 40px;
+                        top: 25px;
+                        color: #333;
+                        font-size: 14px;
+                    }
+                    button:nth-of-type(1){
+                        position: absolute;
+                        top: 72px;
+                        right: 200px;
+                        width: 120px;
+                        height: 40px;
+                        background: #fafafa;
+                        border: 1px solid #865C30;
+                        color: #865C30;
+                    }
+                    button:nth-of-type(2){
+                        width: 120px;
+                        height: 40px;
+                        background:#865C30 ;
+                        border: 1px solid #865C30;
+                        position: absolute;
+                        top: 72px;
+                        right: 40px;
+                        color: white;
+                    }
+                }
+            }
+        }
+}

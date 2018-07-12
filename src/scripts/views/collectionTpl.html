@@ -1,0 +1,15 @@
+<ul>
+    {{each productList}}
+    <li pid="{{$value.pid}}">
+        <a href="###">
+            <img src="{{$value.imgUrl}}" alt="">
+        </a>
+        <p>{{$value.productName}}</p>
+        <b>¥
+            <span>{{$value.marketPrice}}</span>
+        </b>
+        <i></i>
+        <h6>{{$value.productInfo}}</h6>
+    </li>
+    {{/each}}
+</ul>

@@ -1,0 +1,89 @@
+{
+    "ret": true,
+    "errmsg": "",
+    "data": {
+        "Category": {
+            "page": {
+                "pageStart": 0,
+                "pageEnd":19,
+                "pageList":1,
+                "pageNum":20
+            },
+            "productList": {
+                "0":{
+                    "pid": "n001" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/23d5e520b59bed82f1ab2d847179c333.png" ,
+                    "productName": "格子转椅",
+                    "marketPrice": "899",
+                    "productInfo": "趣味格子 自由旋转"
+                },
+                "1":{
+                    "pid": "n002" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/b5289125e9b55cf72e9a9623d006415e.png" ,
+                    "productName": "怀抱休闲椅组合",
+                    "marketPrice": "3999",
+                    "productInfo": "葛优躺神器（皮款）"
+                },
+                "2":{
+                    "pid": "n003" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/f62034bc1ba6772073c3efecdd37bf6a.png" ,
+                    "productName": "2件装 叠加餐椅",
+                    "marketPrice": "1099",
+                    "productInfo": "随心叠放 方便存储"
+                },
+                "3":{
+                    "pid": "n004" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/e8e9ed6010aa0b81f7e8eab713f7e1a0.png" ,
+                    "productName": "方糖皮质储物凳",
+                    "marketPrice": "429",
+                    "productInfo": "梳妆。换鞋、边几、脚蹬四合一"
+                },
+                "4":{
+                    "pid": "n005" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/bbe0d25d3382de885960ca4d939c096d.png" ,
+                    "productName": "韵白梳妆台",
+                    "marketPrice": "1999",
+                    "productInfo": "精巧设计，用心之作"
+                },
+                "5":{
+                    "pid": "n006" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/3943ca82e7a26e355581632d0940f561.png" ,
+                    "productName": "韵白系列梳妆镜",
+                    "marketPrice": "399",
+                    "productInfo": "美观典雅，创新设计"
+                },
+                "6":{
+
+                    "pid": "n007" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/fc37d245b30740c5e65bb1b20f14781a.png" ,
+                    "productName": "韵白系列桌椅组合",
+                    "marketPrice": "5999",
+                    "productInfo": "高档典雅，经典组合"
+                },
+                "7":{
+                    "pid": "n008" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/7831678cc6e8e2c364678b379e615411.png" ,
+                    "productName": "韵白电视柜+茶几组合",
+                    "marketPrice": "3999",
+                    "productInfo": "客厅组合，经典搭配"
+                },
+                "8":{
+                    "pid": "n009" , 
+                    "href": ""  ,
+                    "imgUrl": "/images/new/a719a91804977f32389baa244ea388b3.png" ,
+                    "productName": "仕趣系列 茶几",
+                    "marketPrice": "1899",
+                    "productInfo": "异形设计 圆润流线"
+                }
+            }
+        }
+    }
+}

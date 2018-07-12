@@ -1519,6 +1519,9 @@ a, input {
           width: 100px;
           padding-top: 42px; }
 
+.userhome_content a {
+  cursor: pointer; }
+
 .userhome_content #address_manage {
   padding-top: 20px;
   width: 900px;
@@ -1571,7 +1574,7 @@ a, input {
             margin-right: 12px; }
 
 .userhome_content #new_address {
-  background: pink;
+  display: none;
   width: 100%;
   height: 1000px;
   padding-top: 36px;
@@ -1585,3 +1588,515 @@ a, input {
       margin-left: 23px; }
   .userhome_content #new_address .address_detail {
     margin-top: 24px; }
+    .userhome_content #new_address .address_detail > span {
+      vertical-align: top;
+      line-height: 50px;
+      display: inline-block; }
+    .userhome_content #new_address .address_detail textarea {
+      margin-left: 20px; }
+  .userhome_content #new_address .host {
+    margin-top: 24px;
+    padding-left: 14px; }
+    .userhome_content #new_address .host #guest {
+      margin-left: 25px;
+      width: 135px;
+      height: 24px;
+      margin-right: 62px;
+      border: 1px solid #ccc; }
+    .userhome_content #new_address .host #telephone {
+      margin-left: 23px;
+      width: 180px;
+      height: 24px;
+      border: 1px solid #ccc; }
+  .userhome_content #new_address .makeitdefault {
+    position: relative;
+    margin-top: 33px; }
+    .userhome_content #new_address .makeitdefault #makeitdefault {
+      margin-left: 10px;
+      margin-right: 13px; }
+    .userhome_content #new_address .makeitdefault #btn_save {
+      width: 145px;
+      height: 40px;
+      background: #865C30;
+      color: white;
+      margin-left: 204px;
+      margin-right: 67px; }
+    .userhome_content #new_address .makeitdefault #btn_cancle {
+      width: 142px;
+      height: 40px;
+      border: 1px solid #865C30;
+      color: #865C30;
+      background: white; }
+
+.userhome_content {
+  height: auto;
+  margin-bottom: 39px;
+  min-height: 800px; }
+  .userhome_content .user_base #deleteAll {
+    float: right;
+    margin-right: 40px;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #999; }
+  .userhome_content #myCollections {
+    margin-top: 45px;
+    position: relative; }
+    .userhome_content #myCollections .date {
+      color: #865C30;
+      font-size: 18px;
+      margin-left: 20px; }
+    .userhome_content #myCollections .line {
+      width: 738px;
+      height: 1px;
+      background: #ccc;
+      position: absolute;
+      top: 13px;
+      left: 120px; }
+    .userhome_content #myCollections #collection_box {
+      margin-top: 20px;
+      width: 100%;
+      height: auto; }
+      .userhome_content #myCollections #collection_box ul {
+        margin-right: -8px; }
+        .userhome_content #myCollections #collection_box ul li {
+          float: left;
+          width: 294px;
+          height: 382px;
+          background: #f1f1f1;
+          text-align: center;
+          margin-bottom: 8px;
+          margin-right: 8px; }
+          .userhome_content #myCollections #collection_box ul li a {
+            display: block;
+            width: 100%;
+            height: 238px;
+            position: relative; }
+            .userhome_content #myCollections #collection_box ul li a img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
+          .userhome_content #myCollections #collection_box ul li p {
+            font-size: 22px;
+            line-height: 34px; }
+          .userhome_content #myCollections #collection_box ul li b {
+            color: #F2476F;
+            font-size: 18px;
+            line-height: 32px; }
+          .userhome_content #myCollections #collection_box ul li i {
+            display: block;
+            margin: 0 auto;
+            width: 205px;
+            height: 3px;
+            background: #d3d3d3; }
+          .userhome_content #myCollections #collection_box ul li h6 {
+            line-height: 40px;
+            font-size: 12px;
+            color: #9e9e9e;
+            line-height: 34px; }
+
+#orders {
+  width: 900px;
+  height: auto;
+  min-height: 800px;
+  margin-bottom: 30px; }
+  #orders #empty {
+    display: none;
+    padding-top: 135px;
+    margin: 0 auto;
+    width: 263px;
+    height: 199px; }
+    #orders #empty img {
+      width: 100%;
+      height: 100%; }
+    #orders #empty p {
+      font-size: 16px;
+      line-height: 56px;
+      text-align: center;
+      color: #666; }
+  #orders #dispatched {
+    display: none;
+    margin-top: 35px; }
+    #orders #dispatched ul li {
+      height: 284px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 35px; }
+      #orders #dispatched ul li > P {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px; }
+      #orders #dispatched ul li .order_state {
+        position: absolute;
+        right: 40px;
+        top: 0;
+        color: #666; }
+      #orders #dispatched ul li .order_info {
+        position: relative;
+        color: #666; }
+        #orders #dispatched ul li .order_info img {
+          width: 110px;
+          height: 110px;
+          background: #f1f1f1; }
+        #orders #dispatched ul li .order_info > p {
+          position: absolute;
+          top: 10px;
+          left: 152px; }
+          #orders #dispatched ul li .order_info > p > span {
+            margin-right: 92px; }
+        #orders #dispatched ul li .order_info > b {
+          position: absolute;
+          top: 44px;
+          left: 152px; }
+        #orders #dispatched ul li .order_info i {
+          position: absolute;
+          top: 44px;
+          right: 40px; }
+        #orders #dispatched ul li .order_info div {
+          position: absolute;
+          top: 100px;
+          right: 40px; }
+      #orders #dispatched ul li .operations {
+        position: absolute;
+        width: 900px;
+        top: 165px;
+        height: 120px;
+        border-top: 1px dashed #ccc;
+        border-bottom: 1px solid #ccc; }
+        #orders #dispatched ul li .operations p {
+          position: absolute;
+          right: 40px;
+          top: 25px;
+          color: #333;
+          font-size: 14px; }
+        #orders #dispatched ul li .operations button:nth-of-type(1) {
+          position: absolute;
+          top: 72px;
+          right: 200px;
+          width: 120px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #865C30;
+          color: #865C30; }
+        #orders #dispatched ul li .operations button:nth-of-type(2) {
+          width: 120px;
+          height: 40px;
+          background: #865C30;
+          border: 1px solid #865C30;
+          position: absolute;
+          top: 72px;
+          right: 40px;
+          color: white; }
+  #orders #obligation {
+    display: none;
+    margin-top: 35px; }
+    #orders #obligation ul li {
+      height: 284px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 35px; }
+      #orders #obligation ul li > P {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px; }
+      #orders #obligation ul li .order_state {
+        position: absolute;
+        right: 40px;
+        top: 0;
+        color: #666; }
+      #orders #obligation ul li .order_info {
+        position: relative;
+        color: #666; }
+        #orders #obligation ul li .order_info img {
+          width: 110px;
+          height: 110px;
+          background: #f1f1f1; }
+        #orders #obligation ul li .order_info > p {
+          position: absolute;
+          top: 10px;
+          left: 152px; }
+          #orders #obligation ul li .order_info > p > span {
+            margin-right: 92px; }
+        #orders #obligation ul li .order_info > b {
+          position: absolute;
+          top: 44px;
+          left: 152px; }
+        #orders #obligation ul li .order_info i {
+          position: absolute;
+          top: 44px;
+          right: 40px; }
+        #orders #obligation ul li .order_info div {
+          position: absolute;
+          top: 100px;
+          right: 40px; }
+      #orders #obligation ul li .operations {
+        position: absolute;
+        width: 900px;
+        top: 165px;
+        height: 120px;
+        border-top: 1px dashed #ccc;
+        border-bottom: 1px solid #ccc; }
+        #orders #obligation ul li .operations p {
+          position: absolute;
+          right: 40px;
+          top: 25px;
+          color: #333;
+          font-size: 14px; }
+        #orders #obligation ul li .operations button:nth-of-type(1) {
+          position: absolute;
+          top: 72px;
+          right: 200px;
+          width: 120px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #865C30;
+          color: #865C30; }
+        #orders #obligation ul li .operations button:nth-of-type(2) {
+          width: 120px;
+          height: 40px;
+          background: #865C30;
+          border: 1px solid #865C30;
+          position: absolute;
+          top: 72px;
+          right: 40px;
+          color: white; }
+    #orders #obligation .tips {
+      position: absolute;
+      top: 0;
+      left: 300px;
+      color: #666; }
+  #orders #received {
+    display: none;
+    margin-top: 35px; }
+    #orders #received ul li {
+      height: 284px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 35px; }
+      #orders #received ul li > P {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px; }
+      #orders #received ul li .order_state {
+        position: absolute;
+        right: 40px;
+        top: 0;
+        color: #666; }
+      #orders #received ul li .order_info {
+        position: relative;
+        color: #666; }
+        #orders #received ul li .order_info img {
+          width: 110px;
+          height: 110px;
+          background: #f1f1f1; }
+        #orders #received ul li .order_info > p {
+          position: absolute;
+          top: 10px;
+          left: 152px; }
+          #orders #received ul li .order_info > p > span {
+            margin-right: 92px; }
+        #orders #received ul li .order_info > b {
+          position: absolute;
+          top: 44px;
+          left: 152px; }
+        #orders #received ul li .order_info i {
+          position: absolute;
+          top: 44px;
+          right: 40px; }
+        #orders #received ul li .order_info div {
+          position: absolute;
+          top: 100px;
+          right: 40px; }
+      #orders #received ul li .operations {
+        position: absolute;
+        width: 900px;
+        top: 165px;
+        height: 120px;
+        border-top: 1px dashed #ccc;
+        border-bottom: 1px solid #ccc; }
+        #orders #received ul li .operations p {
+          position: absolute;
+          right: 40px;
+          top: 25px;
+          color: #333;
+          font-size: 14px; }
+        #orders #received ul li .operations button:nth-of-type(1) {
+          position: absolute;
+          top: 72px;
+          right: 200px;
+          width: 120px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #865C30;
+          color: #865C30; }
+        #orders #received ul li .operations button:nth-of-type(2) {
+          width: 120px;
+          height: 40px;
+          background: #865C30;
+          border: 1px solid #865C30;
+          position: absolute;
+          top: 72px;
+          right: 40px;
+          color: white; }
+  #orders #refunds {
+    display: none;
+    margin-top: 35px; }
+    #orders #refunds ul li {
+      height: 284px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 35px; }
+      #orders #refunds ul li > P {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px; }
+      #orders #refunds ul li .order_state {
+        position: absolute;
+        right: 40px;
+        top: 0;
+        color: #666; }
+      #orders #refunds ul li .order_info {
+        position: relative;
+        color: #666; }
+        #orders #refunds ul li .order_info img {
+          width: 110px;
+          height: 110px;
+          background: #f1f1f1; }
+        #orders #refunds ul li .order_info > p {
+          position: absolute;
+          top: 10px;
+          left: 152px; }
+          #orders #refunds ul li .order_info > p > span {
+            margin-right: 92px; }
+        #orders #refunds ul li .order_info > b {
+          position: absolute;
+          top: 44px;
+          left: 152px; }
+        #orders #refunds ul li .order_info i {
+          position: absolute;
+          top: 44px;
+          right: 40px; }
+        #orders #refunds ul li .order_info div {
+          position: absolute;
+          top: 100px;
+          right: 40px; }
+      #orders #refunds ul li .operations {
+        position: absolute;
+        width: 900px;
+        top: 165px;
+        height: 120px;
+        border-top: 1px dashed #ccc;
+        border-bottom: 1px solid #ccc; }
+        #orders #refunds ul li .operations p {
+          position: absolute;
+          right: 40px;
+          top: 25px;
+          color: #333;
+          font-size: 14px; }
+        #orders #refunds ul li .operations button:nth-of-type(1) {
+          position: absolute;
+          top: 72px;
+          right: 200px;
+          width: 120px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #865C30;
+          color: #865C30; }
+        #orders #refunds ul li .operations button:nth-of-type(2) {
+          width: 120px;
+          height: 40px;
+          background: #865C30;
+          border: 1px solid #865C30;
+          position: absolute;
+          top: 72px;
+          right: 40px;
+          color: white; }
+  #orders #allOrders {
+    display: none;
+    margin-top: 35px; }
+    #orders #allOrders ul li {
+      height: 284px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 35px; }
+      #orders #allOrders ul li > P {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px; }
+      #orders #allOrders ul li .order_state {
+        position: absolute;
+        right: 40px;
+        top: 0;
+        color: #666; }
+      #orders #allOrders ul li .order_info {
+        position: relative;
+        color: #666; }
+        #orders #allOrders ul li .order_info img {
+          width: 110px;
+          height: 110px;
+          background: #f1f1f1; }
+        #orders #allOrders ul li .order_info > p {
+          position: absolute;
+          top: 10px;
+          left: 152px; }
+          #orders #allOrders ul li .order_info > p > span {
+            margin-right: 92px; }
+        #orders #allOrders ul li .order_info > b {
+          position: absolute;
+          top: 44px;
+          left: 152px; }
+        #orders #allOrders ul li .order_info i {
+          position: absolute;
+          top: 44px;
+          right: 40px; }
+        #orders #allOrders ul li .order_info div {
+          position: absolute;
+          top: 100px;
+          right: 40px; }
+      #orders #allOrders ul li .operations {
+        position: absolute;
+        width: 900px;
+        top: 165px;
+        height: 120px;
+        border-top: 1px dashed #ccc;
+        border-bottom: 1px solid #ccc; }
+        #orders #allOrders ul li .operations p {
+          position: absolute;
+          right: 40px;
+          top: 25px;
+          color: #333;
+          font-size: 14px; }
+        #orders #allOrders ul li .operations button:nth-of-type(1) {
+          position: absolute;
+          top: 72px;
+          right: 200px;
+          width: 120px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #865C30;
+          color: #865C30; }
+        #orders #allOrders ul li .operations button:nth-of-type(2) {
+          width: 120px;
+          height: 40px;
+          background: #865C30;
+          border: 1px solid #865C30;
+          position: absolute;
+          top: 72px;
+          right: 40px;
+          color: white; }
+
+#safety {
+  color: #666;
+  margin-top: 37px;
+  min-height: 800px; }
+  #safety p {
+    line-height: 46px;
+    padding-left: 5px;
+    position: relative; }
+    #safety p span {
+      margin-left: 88px; }
+    #safety p b {
+      position: absolute;
+      right: 40px;
+      color: #6699FF;
+      cursor: pointer; }

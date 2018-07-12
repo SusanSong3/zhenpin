@@ -1,4 +1,6 @@
 .userhome_content{
+  // position: relative;
+a{cursor: pointer;}
   #address_manage{
     padding-top: 20px;
     width: 900px;
@@ -70,7 +72,8 @@
     }
   }
   #new_address{
-    background: pink;
+    display: none;
+    // background: pink;
     width: 100%;
     height: 1000px;
     padding-top: 36px;
@@ -88,7 +91,55 @@
     }
     .address_detail{
       margin-top: 24px;
-      // text-align:
+     >span{
+      vertical-align: top;
+      line-height: 50px;
+      display: inline-block;
+     }
+     textarea{
+       margin-left: 20px;
+     }
+    }
+    .host{
+      margin-top: 24px;
+      padding-left: 14px;
+     
+      #guest{
+        margin-left: 25px;
+        width: 135px;
+        height: 24px;
+        margin-right: 62px;
+        border: 1px solid #ccc;
+      }
+      #telephone{
+        margin-left: 23px;
+        width: 180px;
+        height: 24px;
+        border: 1px solid #ccc;
+      }
+    }
+    .makeitdefault{
+      position: relative;
+      margin-top: 33px;
+      #makeitdefault{
+        margin-left: 10px;
+        margin-right: 13px;
+      }
+      #btn_save{
+        width: 145px;
+        height: 40px;
+        background: #865C30;
+        color: white;
+        margin-left: 204px;
+        margin-right: 67px;
+      }
+      #btn_cancle{
+        width: 142px;
+        height: 40px;
+        border: 1px solid #865C30;
+        color: #865C30;
+        background: white;
+      }
     }
   }
 }

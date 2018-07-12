@@ -1,0 +1,40 @@
+.userhome_content{
+    height: auto;
+    margin-bottom: 39px;
+    min-height: 800px;
+    .user_base{
+        #deleteAll{
+            float: right;
+            margin-right: 40px;
+            font-size: 14px;
+            margin-top: 8px;
+            color: #999;
+        }
+    }
+    #myCollections{
+        margin-top: 45px;
+        position: relative;
+        .date{
+            color: #865C30;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .line{
+            width: 738px;
+            height: 1px;
+            background: #ccc;
+            position: absolute;
+            top: 13px;
+            left: 120px;
+        }
+        #collection_box{
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+            
+            @include page_render;
+              
+            
+        }
+    }
+}

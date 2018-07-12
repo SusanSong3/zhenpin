@@ -1,0 +1,19 @@
+#safety{
+   color:  #666;
+   margin-top: 37px;
+   min-height: 800px;
+    p{
+        line-height: 46px;
+         padding-left: 5px;
+         position: relative;
+         span{
+             margin-left: 88px;
+         }
+         b{
+            position: absolute;
+            right: 40px;
+            color: #6699FF;
+            cursor: pointer;
+         }
+    }
+}

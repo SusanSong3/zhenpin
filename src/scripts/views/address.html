@@ -1,8 +1,12 @@
 <div class="user_base">
-    <span class="active"><a href="#/address">地址管理</a></span>
-    <span><a href="###">新建地址</a></span>
+    <span id="add_manage" class="active">
+        <a>地址管理</a>
+    </span>
+    <span id="add_new">
+        <a>新建地址</a>
+    </span>
 </div>
-<div id="address_manage" style="display: none;">                         
+<div id="address_manage">
     <div class="address_nav">
         <ul class="clear">
             <li>默认地址</li>
@@ -13,55 +17,83 @@
         </ul>
     </div>
     <form class="address_form">
-       <ul class="address_item clear">
-           <li class="default_address"><input type="radio" name="address"></li>
-           <li class="master">宋三杯水</li>
-           <li class="address_detail">吉林省长春市绿园区</li>
-           <li class="contact">234****1234</li>
-           <li class="operate"><span id="edit">修改</span><span id="delete">删除</span></li>
-       </ul>
-       <ul class="address_item clear">
-            <li class="default_address"><input type="radio" name="address"></li>
+        <ul class="address_item clear">
+            <li class="default_address">
+                <input type="radio" name="address" checked>
+            </li>
             <li class="master">宋三杯水</li>
             <li class="address_detail">吉林省长春市绿园区</li>
             <li class="contact">234****1234</li>
-            <li class="operate"><span id="edit">修改</span><span id="delete">删除</span></li>
+            <li class="operate">
+                <span id="edit">修改</span>
+                <span id="delete">删除</span>
+            </li>
         </ul>
         <ul class="address_item clear">
-            <li class="default_address"><input type="radio" name="address"></li>
+            <li class="default_address">
+                <input type="radio" name="address">
+            </li>
             <li class="master">宋三杯水</li>
             <li class="address_detail">吉林省长春市绿园区</li>
             <li class="contact">234****1234</li>
-            <li class="operate"><span id="edit">修改</span><span id="delete">删除</span></li>
+            <li class="operate">
+                <span id="edit">修改</span>
+                <span id="delete">删除</span>
+            </li>
+        </ul>
+        <ul class="address_item clear">
+            <li class="default_address">
+                <input type="radio" name="address">
+            </li>
+            <li class="master">宋三杯水</li>
+            <li class="address_detail">吉林省长春市绿园区</li>
+            <li class="contact">234****1234</li>
+            <li class="operate">
+                <span id="edit">修改</span>
+                <span id="delete">删除</span>
+            </li>
         </ul>
     </form>
 </div>
-<div id="new_address" style="display: block;">
-    <div class="position">
-        所在地区：
-        <select name="province" id="province">
-            <option value="">请选择</option>
-            <option value="北京市">北京市</option>
-            <option value="天津市">天津市</option>
-            <option value="重庆市">重庆市</option>
-            <option value="上海市">上海市</option>
-            <option value="上海市">吉林省</option>
-        </select>
-        <select name="city" id="city">
-            <option value="">请选择</option>
-            <option value="长春市">长春市</option>
-            <option value="吉林市">吉林市</option>
-            <option value="四平市">四平市</option>
-        </select>
-        <select name="zone" id="zone">
-            <option value="">请选择</option>
-            <option value="朝阳区">朝阳区</option>
-            <option value="绿园区">绿园区</option>
-            <option value="宽城区">宽城区</option>
-        </select>
-    </div>
-    <div class="address_detail">
-        详细地址：
-        <textarea name="address_detail" id="address_detail" cols=110 rows="4"></textarea>
-    </div>
+<div id="new_address">
+    <form action="###">
+        <div class="position">
+            所在地区：
+            <select name="province" id="province">
+                <option value="">请选择</option>
+                <option value="北京市">北京市</option>
+                <option value="天津市">天津市</option>
+                <option value="重庆市">重庆市</option>
+                <option value="上海市">上海市</option>
+                <option value="上海市">吉林省</option>
+            </select>
+            <select name="city" id="city">
+                <option value="">请选择</option>
+                <option value="长春市">长春市</option>
+                <option value="吉林市">吉林市</option>
+                <option value="四平市">四平市</option>
+            </select>
+            <select name="zone" id="zone">
+                <option value="">请选择</option>
+                <option value="朝阳区">朝阳区</option>
+                <option value="绿园区">绿园区</option>
+                <option value="宽城区">宽城区</option>
+            </select>
+        </div>
+        <div class="address_detail">
+            <span>详细地址：</span>
+            <textarea name="address_detail" id="address_detail" cols="90" rows="4"></textarea>
+        </div>
+        <div class="host">
+            收货人：
+            <input type="text" id="guest">手机号码：
+            <input type="text" name="telephone" id="telephone">
+        </div>
+        <div class="makeitdefault">
+            <input type="checkbox" name="makeitdefault" id="makeitdefault">设为默认
+            <button id="btn_save">保存地址</button>
+            <button id="btn_cancle">取消</button>
+        </div>
+    </form>
+
 </div>
