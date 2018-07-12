@@ -9,12 +9,12 @@ const bedController = require('./controllers/bed.controller')
 
 $("#root").html(indexTpl)
 
-userController.usersAuthentication()
+
 
 ;(async () => {
     let html = await bedController.render()
-
+    userController.usersAuthentication()
     $("#container").html(html + footerTpl + logresTpl)
+    logRes.lr()
+    userController.LogRes();
 })()
-logRes.lr()
-userController.LogRes();

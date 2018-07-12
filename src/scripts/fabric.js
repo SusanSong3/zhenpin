@@ -11,12 +11,12 @@ const fabricController = require('./controllers/fabric.controller')
 
 $("#root").html(indexTpl)
 
-userController.usersAuthentication()
 
 ;(async () => {
     let html = await fabricController.render()
     $("#container").html(html + footerTpl + logresTpl)
+    userController.usersAuthentication()
+    logRes.lr()
+    userController.LogRes();
 })()
 
-logRes.lr()
-userController.LogRes();

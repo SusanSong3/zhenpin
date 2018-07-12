@@ -10,9 +10,9 @@ const userController = require("./controllers/userLR.controller")
 const commonController = require("./utils/commonController")
 
 var wsCache = new WebStorageCache();
-
-// let storage = wsCache.get(telephone)
 var storage=window.localStorage;
+
+
 if(storage.telephone){
     console.log('storage',)
     var header = template.render(headerTpl, wsCache.get('telephone'))
@@ -25,17 +25,19 @@ $("#root").html(indexTpl)
 $("#header").html(header)
 $("#container").html(homeTpl + footerTpl + logresTpl)
 
+userController.usersAuthentication()
 logRes.lr();
-
 userController.LogRes();
 commonController.changeClass()
 
 var mySwiper = new Swiper('.swiper-container',{
     direction: 'horizontal',
     loop: true,
-    
+    autoplay:5000,
     // 如果需要分页器
     pagination: {
       el: '.swiper-pagination',
     },
 })
+
+

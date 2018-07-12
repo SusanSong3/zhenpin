@@ -59,7 +59,7 @@ const userLRController = {
         var storage = window.localStorage;
         if(storage.telephone){
             console.log('storage',)
-            var header = await  template.render(headerTpl, wsCache.get('telephone'))
+            var header = await template.render(headerTpl, wsCache.get('telephone'))
             $("#header").html(header)
             userLRController.userLaunch()
             // $('.launch').on('click', function(){
@@ -94,7 +94,7 @@ const userLRController = {
         $('.launch').on('click', function(){
             console.log('123')
             wsCache.delete('telephone');
-            location.reload();
+            location.replace('/index.html');
             // var header = template.render(headerTpl, {telephone: '', stuts:false})
             // $("#header").html(header)
         }.bind(this))

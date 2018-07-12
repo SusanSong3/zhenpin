@@ -10,11 +10,10 @@ const userController = require("./controllers/userLR.controller")
 
 $("#root").html(indexTpl)
 
-
 ;(async () => {
     let html = await newController.render()
-    userController.usersAuthentication()
     $("#container").html(html + footerTpl + logresTpl)
+    userController.usersAuthentication()
+    logRes.lr()
+    userController.LogRes();
 })()
-logRes.lr(15)
-userController.LogRes();

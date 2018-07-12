@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "<header>    <div class=\"head clear\">        {{if !stuts}}        <div id=\"login\">            <i>&#xe646;</i>            <span>登录</span>        </div>        <div id=\"register\">            注册        </div>        {{else}}        <div id=\"user\">            <span>{{telephone}}</span>            <ul>                <li><a href=\"userhome.html\">账户中心</a></li>                <li><a>我的订单</a></li>                <li><a>我的收藏</a></li>                <li><a>地址管理</a></li>                <li><a>退出登录</a></li>            </ul>        </div>        <div id=\"cart\">            <i>&#xe63f;</i>            <a href=\"shoppingcart.html\"><span>购物车</span></a>        </div>        {{/if}}    </div></header><nav>    <div class=\"nav\">        <div id=\"logo\">            <img src=\"./images/logo.png\" alt=\"\">        </div>        <div class=\"search\">            <input type=\"text\" placeholder=\"沙发\">            <i>&#xe651;</i>        </div>        <ul class=\"clear\">            <li class=\"active\"><a href=\"index.html\">首页</a></li>            <li><a href=\"furniture.html\">家具</a></li>            <li><a href=\"bed.html\">床品</a></li>            <li><a href=\"decoration.html\">家饰</a></li>            <li><a href=\"fabric.html\">布艺软装</a></li>            <li><a href=\"fabric.html\">收纳</a></li>            <li><a href=\"new_products.html\">新品</a></li>        </ul>    </div>    </nav>"
+module.exports = "<header>    <div class=\"head clear\">        {{if !stuts}}        <div id=\"login\">            <i>&#xe646;</i>            <span>登录</span>        </div>        <div id=\"register\">            注册        </div>        {{else}}        <div id=\"user\">            <span>{{telephone}}</span>            <ul>                <li><a href=\"userhome.html\">账户中心</a></li>                <li><a>我的订单</a></li>                <li><a>我的收藏</a></li>                <li><a>地址管理</a></li>                <li><a class=\"launch\">退出登录</a></li>            </ul>        </div>        <div id=\"cart\">            <i>&#xe63f;</i>            <a href=\"shoppingcart.html\"><span>购物车</span></a>        </div>        {{/if}}    </div></header><nav>    <div class=\"nav\">        <div id=\"logo\">            <img src=\"./images/logo.png\" alt=\"\">        </div>        <div class=\"search\">            <input type=\"text\" placeholder=\"沙发\">            <i>&#xe651;</i>        </div>        <ul class=\"clear\">            <li class=\"active\"><a href=\"index.html\">首页</a></li>            <li><a href=\"furniture.html\">家具</a></li>            <li><a href=\"bed.html\">床品</a></li>            <li><a href=\"decoration.html\">家饰</a></li>            <li><a href=\"fabric.html\">布艺软装</a></li>            <li><a href=\"fabric.html\">收纳</a></li>            <li><a href=\"new_products.html\">新品</a></li>        </ul>    </div>    </nav>"
 
 /***/ }),
 /* 1 */
@@ -196,7 +196,7 @@ const userLRController = {
         var storage = window.localStorage;
         if(storage.telephone){
             console.log('storage',)
-            var header = await  template.render(headerTpl, wsCache.get('telephone'))
+            var header = await template.render(headerTpl, wsCache.get('telephone'))
             $("#header").html(header)
             userLRController.userLaunch()
             // $('.launch').on('click', function(){
@@ -231,7 +231,7 @@ const userLRController = {
         $('.launch').on('click', function(){
             console.log('123')
             wsCache.delete('telephone');
-            location.reload();
+            location.replace('/index.html');
             // var header = template.render(headerTpl, {telephone: '', stuts:false})
             // $("#header").html(header)
         }.bind(this))
@@ -255,7 +255,7 @@ module.exports = userLRController
 module.exports = {
 
     sign(data,url){
-        console.log(JSON.stringify(data))
+        // console.log(JSON.stringify(data))
         return $.ajax({
             url: '/ceshi/api/user/' + url,
 
@@ -307,15 +307,16 @@ const fabricController = __webpack_require__(28)
 
 $("#root").html(indexTpl)
 
-userController.usersAuthentication()
 
 ;(async () => {
     let html = await fabricController.render()
     $("#container").html(html + footerTpl + logresTpl)
+    userController.usersAuthentication()
+    logRes.lr()
+    userController.LogRes();
 })()
 
-logRes.lr()
-userController.LogRes();
+
 
 /***/ }),
 /* 28 */

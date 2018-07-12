@@ -12,12 +12,13 @@ const decorationController = require('./controllers/decoration.controller')
 
 $("#root").html(indexTpl)
 
-userController.usersAuthentication()
+
 
 ;(async () => {
     let html = await decorationController.render()
     $("#container").html(html + footerTpl + logresTpl)
-})()
+    userController.usersAuthentication()
 
-logRes.lr()
-userController.LogRes();
+    logRes.lr()
+    userController.LogRes();
+})()

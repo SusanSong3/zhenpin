@@ -1,7 +1,7 @@
 module.exports = {
 
     sign(data,url){
-        console.log(JSON.stringify(data))
+        // console.log(JSON.stringify(data))
         return $.ajax({
             url: '/ceshi/api/user/' + url,
 

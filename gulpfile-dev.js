@@ -19,7 +19,7 @@ gulp.task('server', () => {
   return gulp.src('./dev')
     .pipe(server({
       host: 'localhost',
-      port: 8001,
+      port: 8000,
       livereload: true,
       directoryListing: {
         enable: true,

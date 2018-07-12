@@ -8,12 +8,11 @@ const furnitureController = require('./controllers/furniture.controller')
 
 $("#root").html(indexTpl)
 
-userController.usersAuthentication()
 
 ;(async () => {
     let html = await furnitureController.render()
     $("#container").html(html + footerTpl + logresTpl)
+    userController.usersAuthentication()
+    logRes.lr()
+    userController.LogRes();
 })()
-
-logRes.lr()
-userController.LogRes();

@@ -9,10 +9,10 @@ const userController = require("./controllers/userLR.controller")
 const userhomeController = require("./controllers/userhome.controller")
 
 $("#root").html(indexTpl)
-userController.usersAuthentication()
 ;(async () => {
     let html = await userhomeController.render()
     $("#container").html(html + footerTpl)
+    userController.usersAuthentication()
     userhomeController.changepic()
     //这个引入不放在这就报错！
     require('./routes/route')   
