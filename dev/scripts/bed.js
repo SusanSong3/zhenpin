@@ -170,24 +170,19 @@ const userLRController = {
                 telephone: $('#log_usn').val(),
                 password: $('#log_pwd').val()
             }
-            console.log({telephone, password})
-            // let result = await userModel.sign({telephone, password},'login')
+            // console.log({telephone, password})
+            let result = await userModel.sign({telephone, password},'login')
+            //以下是测试用的
             let stuts = true
             wsCache.set('telephone', {telephone,stuts})
             location.reload()
-            // userLRController.renderHeader({telephone,stuts})
-            // $(".layer input").val('');
-            // $(".layer").hide();
-
-
-            // if(result.ret){
-            //     alert(result.data.msg)
-            //     let stuts = result.ret
-            //     // wsCache.set('token', result.data.token)
-            //     // renderHeader({telephone,stuts})
-            // }else{
-            //     alert(result.errmsg)
+            //以下是真正的登录逻辑，为了写其他页面，改成本地的虚假登录
+            // if( result.ret == true){
+            //     let stuts = true
+            //     wsCache.set('telephone', {telephone,stuts})
+            //     location.reload()
             // }
+            
         }.bind(this))
     },
 
@@ -195,7 +190,7 @@ const userLRController = {
     async usersAuthentication(){
         var storage = window.localStorage;
         if(storage.telephone){
-            console.log('storage',)
+            // console.log('storage',)
             var header = await template.render(headerTpl, wsCache.get('telephone'))
             $("#header").html(header)
             userLRController.userLaunch()
@@ -208,7 +203,7 @@ const userLRController = {
             // })
 
         }else{
-            console.log('NOTstorage')
+            // console.log('NOTstorage')
             var header = template.render(headerTpl, {telephone: '', stuts:false})
             $("#header").html(header)
         }
@@ -218,7 +213,7 @@ const userLRController = {
 
     //----------头部渲染----------//
     renderHeader({telephone, stuts}) {
-        console.log('555')
+        // console.log('555')
         let header = template.render(headerTpl, {
             telephone,
             stuts
@@ -229,7 +224,7 @@ const userLRController = {
     //----------退出登录----------//
     userLaunch(){
         $('.launch').on('click', function(){
-            console.log('123')
+            // console.log('123')
             wsCache.delete('telephone');
             location.replace('/index.html');
             // var header = template.render(headerTpl, {telephone: '', stuts:false})
@@ -257,7 +252,7 @@ module.exports = {
     sign(data,url){
         // console.log(JSON.stringify(data))
         return $.ajax({
-            url: '/ceshi/api/user/' + url,
+            url: '/backend/qqq/api/user/' + url,
 
             contentType: "application/json",
             type: 'post',
@@ -321,11 +316,9 @@ const bedTpl = __webpack_require__(26)
 const bedController = {
     async render(){
         let result = await bedModel.find()
-        // console.log(result);
-        let fresult = result.data.Category
-        // console.log(fresult);
-        let html = template.render(bedTpl,fresult)
-        // console.log(html);
+        console.log(result.data.msg);
+        let html = template.render(bedTpl,{msg:result.data.msg})
+        console.log(html);
         return html
     }
 }
@@ -338,19 +331,27 @@ module.exports = bedController
 
 module.exports = {
     find(){
-        return fetch('/api/bedList')
-        .then(response => response.json())
-        .then(result => {
-            return result
+        return $.ajax({
+            url:'/backend/ssh1fs/api/list',
+            data:{
+                c_id:1
+            },
+            contentType: "application/json",
+            type: 'get',
+
+            success: (result) => {
+                return result
+            }
         })
     }
+
 }
 
 /***/ }),
 /* 26 */
 /***/ (function(module, exports) {
 
-module.exports = "<main id=\"bed\" class=\"clear\">    <main>        <div class=\"swiper-container\">            <div class=\"swiper-wrapper\">                <div class=\"swiper-slide\"><a href=\"###\"><img src=\"./images/furniture/1.png\" alt=\"\"></a></div>                <div class=\"swiper-slide\"></div>                <div class=\"swiper-slide\"></div>            </div>            <!-- 如果需要分页器 -->            <div class=\"swiper-pagination\"></div>        </div>        <p class=\"title\">床品</p>        <div class=\"bed_container clear\">            <ul>                {{each productList}}                <li pid=\"{{$value.pid}}\">                    <a href=\"###\">                        <img src=\"{{$value.imgUrl}}\" alt=\"\">                    </a>                    <p>{{$value.productName}}</p>                    <b>¥<span>{{$value.marketPrice}}</span></b>                    <i></i>                    <h6>{{$value.productInfo}}</h6>                </li>                {{/each}}            </ul>        </div>    </main></main>"
+module.exports = "<main id=\"bed\" class=\"clear\">    <main>        <div class=\"swiper-container\">            <div class=\"swiper-wrapper\">                <div class=\"swiper-slide\"><a href=\"###\"><img src=\"./images/furniture/1.png\" alt=\"\"></a></div>                <div class=\"swiper-slide\"></div>                <div class=\"swiper-slide\"></div>            </div>            <!-- 如果需要分页器 -->            <div class=\"swiper-pagination\"></div>        </div>        <p class=\"title\">床品</p>        <div class=\"bed_container clear\">            <ul>                {{each msg}}                <li pid=\"{{$value.id}}\">                    <a href=\"###\">                        <img src=\"{{$value.picture}}\" alt=\"\">                    </a>                    <p>{{$value.name}}</p>                    <b>¥<span>{{$value.price}}</span></b>                    <i></i>                    <h6>{{$value.describeinfo}}</h6>                </li>                {{/each}}            </ul>        </div>    </main></main>"
 
 /***/ })
 /******/ ]);

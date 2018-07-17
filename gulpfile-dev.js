@@ -28,7 +28,6 @@ gulp.task('server', () => {
       middleware: [
         proxy('/api', {
           target: 'http://localhost:9000',
-          //   target: '10.9.166.32:8080/api',
           changeOrigin: true
         }),
         proxy('/ceshi', {
@@ -38,20 +37,14 @@ gulp.task('server', () => {
                   '^/ceshi': ''
               }
         }),
-        // proxy('/plate', {
-        //   target: 'http://m.banggo.com',
-        //   changeOrigin: true,
-          // pathRewrite:{
-          //   "/plate":""
-          // }
-        // }),
-        // proxy('/showList', {
-        //   target: 'http://m.banggo.com',
-        //   changeOrigin: true,
-        //   pathRewrite:{
-        //     "/showList":""
-        //   }
-        // }),
+        proxy('/backend',{
+          target:'http://39.106.187.52:8080/',
+          changeOrigin: true,
+            pathRewrite: {
+                '^/backend': ''
+            }
+        })
+        
       ]
     }))
 })
@@ -74,7 +67,7 @@ gulp.task('js', () => {
         'fabric': './src/scripts/fabric.js',
         'userhome': './src/scripts/userhome.js',
         'shoppingcart': './src/scripts/shoppingcart.js',
-        // 'addressManage': './src/scripts/addressManage.js',
+        'submitOrders': './src/scripts/submitOrders.js',
       },
       output: {
         filename: '[name].js'

@@ -1,0 +1,49 @@
+#submitOrders{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+   .breadNav{
+        @include breadNav;
+        border-bottom:none;
+    }
+    article{
+        margin-top: 69px;
+
+        color: #666;
+        >p{
+            font-size: 18px;
+            line-height: 40px;
+        }
+        >h5{
+            line-height: 40px;
+        }
+        >h6{
+            margin-left: 70px;
+            line-height: 40px;
+        }
+        h3{
+            margin-top: 62px;
+            line-height: 40px;
+            border-bottom: 1px solid #ccc;
+            font-size: 14px;
+        }
+        .choose_methods{
+            padding-left: 18px;
+        }
+        .pay_methods{
+            margin-bottom: 42px;
+            padding-left: 18px;
+        }
+        div{
+            margin-bottom: 600px;
+            img{
+                display: inline-block;
+                width: 111px;
+                height: 39px;
+                &:nth-of-type(1){
+                    margin-right: 85px;
+                }
+            }
+        }
+    }
+}

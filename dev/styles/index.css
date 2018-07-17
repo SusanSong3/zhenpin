@@ -2100,3 +2100,48 @@ a, input {
       right: 40px;
       color: #6699FF;
       cursor: pointer; }
+
+#submitOrders {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto; }
+  #submitOrders .breadNav {
+    padding-top: 56px;
+    border-bottom: none; }
+    #submitOrders .breadNav ul {
+      color: #666; }
+      #submitOrders .breadNav ul li {
+        float: left;
+        padding-right: 18px; }
+        #submitOrders .breadNav ul li a {
+          color: #666;
+          padding-left: 12px; }
+  #submitOrders article {
+    margin-top: 69px;
+    color: #666; }
+    #submitOrders article > p {
+      font-size: 18px;
+      line-height: 40px; }
+    #submitOrders article > h5 {
+      line-height: 40px; }
+    #submitOrders article > h6 {
+      margin-left: 70px;
+      line-height: 40px; }
+    #submitOrders article h3 {
+      margin-top: 62px;
+      line-height: 40px;
+      border-bottom: 1px solid #ccc;
+      font-size: 14px; }
+    #submitOrders article .choose_methods {
+      padding-left: 18px; }
+    #submitOrders article .pay_methods {
+      margin-bottom: 42px;
+      padding-left: 18px; }
+    #submitOrders article div {
+      margin-bottom: 600px; }
+      #submitOrders article div img {
+        display: inline-block;
+        width: 111px;
+        height: 39px; }
+        #submitOrders article div img:nth-of-type(1) {
+          margin-right: 85px; }

@@ -1,9 +1,17 @@
 module.exports = {
     find(){
-        return fetch('/api/bedList')
-        .then(response => response.json())
-        .then(result => {
-            return result
+        return $.ajax({
+            url:'/backend/ssh1fs/api/list',
+            data:{
+                c_id:1
+            },
+            contentType: "application/json",
+            type: 'get',
+
+            success: (result) => {
+                return result
+            }
         })
     }
+
 }

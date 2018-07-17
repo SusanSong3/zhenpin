@@ -12,15 +12,15 @@
         <p class="title">床品</p>
         <div class="bed_container clear">
             <ul>
-                {{each productList}}
-                <li pid="{{$value.pid}}">
+                {{each msg}}
+                <li pid="{{$value.id}}">
                     <a href="###">
-                        <img src="{{$value.imgUrl}}" alt="">
+                        <img src="{{$value.picture}}" alt="">
                     </a>
-                    <p>{{$value.productName}}</p>
-                    <b>¥<span>{{$value.marketPrice}}</span></b>
+                    <p>{{$value.name}}</p>
+                    <b>¥<span>{{$value.price}}</span></b>
                     <i></i>
-                    <h6>{{$value.productInfo}}</h6>
+                    <h6>{{$value.describeinfo}}</h6>
                 </li>
                 {{/each}}
             </ul>

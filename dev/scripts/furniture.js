@@ -170,24 +170,19 @@ const userLRController = {
                 telephone: $('#log_usn').val(),
                 password: $('#log_pwd').val()
             }
-            console.log({telephone, password})
-            // let result = await userModel.sign({telephone, password},'login')
+            // console.log({telephone, password})
+            let result = await userModel.sign({telephone, password},'login')
+            //以下是测试用的
             let stuts = true
             wsCache.set('telephone', {telephone,stuts})
             location.reload()
-            // userLRController.renderHeader({telephone,stuts})
-            // $(".layer input").val('');
-            // $(".layer").hide();
-
-
-            // if(result.ret){
-            //     alert(result.data.msg)
-            //     let stuts = result.ret
-            //     // wsCache.set('token', result.data.token)
-            //     // renderHeader({telephone,stuts})
-            // }else{
-            //     alert(result.errmsg)
+            //以下是真正的登录逻辑，为了写其他页面，改成本地的虚假登录
+            // if( result.ret == true){
+            //     let stuts = true
+            //     wsCache.set('telephone', {telephone,stuts})
+            //     location.reload()
             // }
+            
         }.bind(this))
     },
 
@@ -195,7 +190,7 @@ const userLRController = {
     async usersAuthentication(){
         var storage = window.localStorage;
         if(storage.telephone){
-            console.log('storage',)
+            // console.log('storage',)
             var header = await template.render(headerTpl, wsCache.get('telephone'))
             $("#header").html(header)
             userLRController.userLaunch()
@@ -208,7 +203,7 @@ const userLRController = {
             // })
 
         }else{
-            console.log('NOTstorage')
+            // console.log('NOTstorage')
             var header = template.render(headerTpl, {telephone: '', stuts:false})
             $("#header").html(header)
         }
@@ -218,7 +213,7 @@ const userLRController = {
 
     //----------头部渲染----------//
     renderHeader({telephone, stuts}) {
-        console.log('555')
+        // console.log('555')
         let header = template.render(headerTpl, {
             telephone,
             stuts
@@ -229,7 +224,7 @@ const userLRController = {
     //----------退出登录----------//
     userLaunch(){
         $('.launch').on('click', function(){
-            console.log('123')
+            // console.log('123')
             wsCache.delete('telephone');
             location.replace('/index.html');
             // var header = template.render(headerTpl, {telephone: '', stuts:false})
@@ -257,7 +252,7 @@ module.exports = {
     sign(data,url){
         // console.log(JSON.stringify(data))
         return $.ajax({
-            url: '/ceshi/api/user/' + url,
+            url: '/backend/qqq/api/user/' + url,
 
             contentType: "application/json",
             type: 'post',
@@ -327,7 +322,7 @@ module.exports = furnitureController
 
 module.exports = {
     find(){
-        return fetch('/api/decorationList')
+        return fetch('/api/furnitureList')
         .then(response => response.json())
         .then(result => {
             return result
