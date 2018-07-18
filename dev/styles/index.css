@@ -1115,10 +1115,12 @@ a, input {
         display: none;
         width: 100px;
         height: 100px;
+        background-size: 440px 440px;
+        background-position: 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         position: absolute;
-        top: 0;
         left: 0;
-        background: rgba(255, 255, 255, 0.8); }
+        top: 0; }
       #item section .small ul {
         position: absolute;
         left: 460px;
@@ -1138,8 +1140,7 @@ a, input {
       left: 580px;
       z-index: 100; }
       #item section .big img {
-        width: 100%;
-        height: 100%; }
+        position: absolute; }
     #item section .show_info {
       position: absolute;
       left: 700px;

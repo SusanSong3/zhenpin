@@ -39,7 +39,7 @@ Magnifier.prototype = {
         
     },
     toggleFocus(event){
-        console.log(2)
+        // console.log(2)
         var opacity_img = this.small_ele.find(".opacity-img");
         // console.log(opacity_img);
         if(event.data.hidden){
@@ -82,10 +82,10 @@ Magnifier.prototype = {
         var bigImg = this.big_ele.find("img")
         var fullLongX = bigImg.width() - this.big_ele.width();
         var fullLongY = bigImg.height() - this.big_ele.height() ;
-        
+       
         var eleX = -Math.round(fullLongX * this.propX / 100);
         var eleY = -Math.round(fullLongY * this.propY / 100);
-        
+        console.log(eleX,eleY)
         bigImg.css({
             left:eleX,
             top:eleY
