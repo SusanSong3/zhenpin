@@ -39,6 +39,7 @@ Magnifier.prototype = {
         
     },
     toggleFocus(event){
+        console.log(2)
         var opacity_img = this.small_ele.find(".opacity-img");
         // console.log(opacity_img);
         if(event.data.hidden){

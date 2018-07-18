@@ -68,6 +68,7 @@ gulp.task('js', () => {
         'userhome': './src/scripts/userhome.js',
         'shoppingcart': './src/scripts/shoppingcart.js',
         'submitOrders': './src/scripts/submitOrders.js',
+        'item': './src/scripts/item.js',
       },
       output: {
         filename: '[name].js'
