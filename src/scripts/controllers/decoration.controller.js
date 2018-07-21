@@ -3,7 +3,7 @@ const decorationTpl = require('../views/decoration.html')
 const decorationController = {
     async render(){
         let result = await decorationModel.find()
-        console.log(result);
+        // console.log(result);
         let fresult = result.data.Category
         // console.log(fresult);
         let html = template.render(decorationTpl,fresult)

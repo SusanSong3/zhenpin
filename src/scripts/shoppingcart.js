@@ -6,7 +6,8 @@ const logRes = require("./utils/logRes")
 const userController = require("./controllers/userLR.controller")
 
 const shoppingcartController = require("./controllers/shoppingcart.controller")
-
+const commonController = require("./utils/commonController")
+// commonController.changeClass()
 
 /*----------页面渲染----------*/
 $("#root").html(indexTpl)

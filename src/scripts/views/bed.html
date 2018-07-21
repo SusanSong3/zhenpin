@@ -14,8 +14,8 @@
             <ul>
                 {{each msg}}
                 <li pid="{{$value.id}}">
-                    <a href="###">
-                        <img src="{{$value.picture}}" alt="">
+                    <a href="/ssh1fs/dev/item.html?id={{$value.id}}">
+                        <img src="http://39.106.187.52:8080/ssh1fs/uploadfolder/{{($value.picture).split(',')[0]}}" alt="">
                     </a>
                     <p>{{$value.name}}</p>
                     <b>¥<span>{{$value.price}}</span></b>

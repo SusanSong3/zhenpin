@@ -1,7 +1,7 @@
 module.exports = {
     find(){
         return $.ajax({
-            url:'/backend/ssh1fs/api/list',
+            url:'/ssh1fs/api/list',
             data:{
                 c_id:1
             },

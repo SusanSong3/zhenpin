@@ -89,7 +89,7 @@ const userLRController = {
         $('.launch').on('click', function(){
             // console.log('123')
             wsCache.delete('telephone');
-            location.replace('/index.html');
+            location.replace('http://39.106.187.52:8080/ssh1fs/dev/index.html');
             // var header = template.render(headerTpl, {telephone: '', stuts:false})
             // $("#header").html(header)
         }.bind(this))

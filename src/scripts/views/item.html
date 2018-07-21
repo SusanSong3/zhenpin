@@ -1,27 +1,28 @@
 <main id="item">
     <nav>
-        <a href="index.html">首页</a> > <a href="furniture.html">家具</a> > <a>沙发</a> > <a href=""><span>YEATION百合沙发</span></a>
+        <a href="index.html">首页</a> > <a href="furniture.html">家具</a> > <a>沙发</a> > <a href=""><span>{{name}}</span></a>
     </nav>
     <section class="clear">
         <div class="small clear">
             <div class="wrap"></div>
-            <img src="../images/item/7bfc78909334174cd46ca5a458d4e085.png" alt="big" class="opacity-img">
-            <span class="grayBox" style="background-image: url(../images/item/7bfc78909334174cd46ca5a458d4e085.png);"></span>
+            <img src="http://39.106.187.52:8080/ssh1fs/uploadfolder/{{picture.split(',')[0]}}" alt="big" class="opacity-img">
+            <span class="grayBox"></span>
             <ul>
-                <li><img src="../images/item/7bfc78909334174cd46ca5a458d4e085_small.png" alt=""></li>
-                <li><img src="../images/item/d6e93b0aa1e807400c68d7313d0d9076.png" alt=""></li>
-                <li><img src="../images/item/230ef8ecc7375983b691545706e066c9.png" alt=""></li>
-                <li><img src="../images/item/e21b58dc1fe7de3228ab9f45bbeec0d5.png" alt=""></li>
+                <li><img src="http://39.106.187.52:8080/ssh1fs/uploadfolder/{{picture.split(',')[0]}}" alt=""></li>
+                <li><img src="http://39.106.187.52:8080/ssh1fs/uploadfolder/{{picture.split(',')[1]}}" alt=""></li>
+                <li><img src="http://39.106.187.52:8080/ssh1fs/uploadfolder/{{picture.split(',')[2]}}" alt=""></li>
+                <li><img src="http://39.106.187.52:8080/ssh1fs/uploadfolder/{{picture.split(',')[3]}}" alt=""></li>
             </ul>
         </div>
         <div class="big">
-            <img src="../images/item/7bfc78909334174cd46ca5a458d4e085.png" alt="">
+            <img src="http://39.106.187.52:8080/ssh1fs/uploadfolder/{{picture.split(',')[0]}}" alt="">
         </div>
         <div class="show_info">
-            <h1>YEATION百合沙发</h1>
-            <p class="sub_title">雍容大气，全套可拆洗</p>
+            
+            <h1>{{name}}</h1>
+            <p class="sub_title">{{describeinfo}}</p>
             <article class="clear">
-                <div>价格<b class="marketPrice">¥ <span>3999</span></b></div>
+                <div>价格<b class="marketPrice">¥ <span>{{price}}</span></b></div>
                 <div>积分<b class="integration">购买最高得399积分</b></div>
                 <div>领券<b class="coupon"><span>每满1000-100</span><span>每满1000-100</span></b></div>
                 <div class="clear" id="service"> 
@@ -39,16 +40,17 @@
             <div class="options">
                 <p>规格<span>深灰色布套</span><span>米白色布套</span></p>
                 <p>规格<span class="size">2200*725*890mm</span><span class="size">2200*725*890mm</span></p>
-                <b class="count">数量</b>
-                <b id="count">
+                <!-- <b class="count">数量</b>
+                     <b id="count">
                     <i id="reduce">-</i><input type="text" name="" id="count_num"><i id="add">+</i>
-                </b>
+                </b> -->
                 <div class="buttonList">
                     <button class="buyNow">立即购买</button>
-                    <button class="addCart"><i>&#xe606;</i>加入购物车</button>
-                    <span class="collection"><i>&#xe620;</i><b>收藏</b></span>
+                    <button class="addCart">加入购物车</button>
+                    <span class="collection"><b>收藏</b></span>
                 </div>
             </div>
+            
         </div>
     </section>
     <main class="clear">

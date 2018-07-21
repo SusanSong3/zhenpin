@@ -8,6 +8,11 @@ const logRes = require("./utils/logRes")
 
 const userController = require("./controllers/userLR.controller")
 const commonController = require("./utils/commonController")
+// commonController.changeClass()
+
+
+
+
 
 var wsCache = new WebStorageCache();
 var storage=window.localStorage;

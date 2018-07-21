@@ -7,6 +7,7 @@ const userController = require("./controllers/userLR.controller")
 const furnitureController = require('./controllers/furniture.controller')
 
 $("#root").html(indexTpl)
+const commonController = require("./utils/commonController")
 
 
 ;(async () => {
@@ -15,4 +16,5 @@ $("#root").html(indexTpl)
     userController.usersAuthentication()
     logRes.lr()
     userController.LogRes();
+    commonController.changeNavClass()
 })()

@@ -7,7 +7,8 @@ const logRes = require("./utils/logRes")
 const userController = require("./controllers/userLR.controller")
 
 const fabricController = require('./controllers/fabric.controller')
-
+const commonController = require("./utils/commonController")
+// commonController.changeClass()
 
 $("#root").html(indexTpl)
 

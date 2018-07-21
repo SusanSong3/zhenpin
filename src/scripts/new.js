@@ -6,7 +6,9 @@ const logresTpl = require("./views/logres.html")
 const logRes = require("./utils/logRes")
 const newController = require('./controllers/new.controller')
 const userController = require("./controllers/userLR.controller")
-
+const commonController = require("./utils/commonController")
+// const commonController = require("./utils/commonController")
+// commonController.changeClass()
 
 $("#root").html(indexTpl)
 
@@ -16,4 +18,5 @@ $("#root").html(indexTpl)
     userController.usersAuthentication()
     logRes.lr()
     userController.LogRes();
+    commonController.changeClass()
 })()

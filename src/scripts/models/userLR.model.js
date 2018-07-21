@@ -3,7 +3,7 @@ module.exports = {
     sign(data,url){
         // console.log(JSON.stringify(data))
         return $.ajax({
-            url: '/backend/qqq/api/user/' + url,
+            url: '/qqq/api/user/' + url,
 
             contentType: "application/json",
             type: 'post',

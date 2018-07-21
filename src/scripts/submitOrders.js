@@ -9,7 +9,8 @@ const logRes = require("./utils/logRes")
 const userController = require("./controllers/userLR.controller")
 
 // const cartController = require('./controllers/cart.controller')
-
+const commonController = require("./utils/commonController")
+// commonController.changeClass()
 userController.usersAuthentication()
 $("#root").html(indexTpl)
 $(".container").html(headerTpl + submitOrdersTpl + footerTpl)

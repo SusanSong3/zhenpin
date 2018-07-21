@@ -6,7 +6,8 @@ const logRes = require("./utils/logRes")
 const userController = require("./controllers/userLR.controller")
 
 const bedController = require('./controllers/bed.controller')
-
+const commonController = require("./utils/commonController")
+// commonController.changeClass()
 $("#root").html(indexTpl)
 
 
@@ -17,4 +18,9 @@ $("#root").html(indexTpl)
     $("#container").html(html + footerTpl + logresTpl)
     logRes.lr()
     userController.LogRes();
+    $('.bed_container ul').on('click','li',async (e) => {
+      let pid = e.originalEvent.path[1].getAttribute('pid')
+      console.log(pid) 
+      // await bedController.turnPage(pid)
+    })
 })()

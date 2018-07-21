@@ -41,10 +41,21 @@ gulp.task('scss', () => {
 gulp.task('js', () => {
   return gulp.src('./src/scripts/app.js')
     .pipe(webpack({
-      entry: './src/scripts/app.js',
+      entry: {
+        'index': './src/scripts/index.js',
+        'new': './src/scripts/new.js',
+        'furniture': './src/scripts/furniture.js',
+        'decoration': './src/scripts/decoration.js',
+        'bed': './src/scripts/bed.js',
+        'fabric': './src/scripts/fabric.js',
+        'userhome': './src/scripts/userhome.js',
+        'shoppingcart': './src/scripts/shoppingcart.js',
+        'submitOrders': './src/scripts/submitOrders.js',
+        'item': './src/scripts/item.js',
+      },
       output: {
-        filename: 'app.js'
-      }
+        filename: '[name].js'
+      },
     }))
     .pipe(babel({
       presets: ['env']

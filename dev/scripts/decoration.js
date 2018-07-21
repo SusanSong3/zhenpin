@@ -60,79 +60,17 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "<header>    <div class=\"head clear\">        {{if !stuts}}        <div id=\"login\">            <i>&#xe646;</i>            <span>登录</span>        </div>        <div id=\"register\">            注册        </div>        {{else}}        <div id=\"user\">            <span>{{telephone}}</span>            <ul>                <li><a href=\"userhome.html\">账户中心</a></li>                <li><a>我的订单</a></li>                <li><a>我的收藏</a></li>                <li><a>地址管理</a></li>                <li><a class=\"launch\">退出登录</a></li>            </ul>        </div>        <div id=\"cart\">            <i>&#xe63f;</i>            <a href=\"shoppingcart.html\"><span>购物车</span></a>        </div>        {{/if}}    </div></header><nav>    <div class=\"nav\">        <div id=\"logo\">            <img src=\"./images/logo.png\" alt=\"\">        </div>        <div class=\"search\">            <input type=\"text\" placeholder=\"沙发\">            <i>&#xe651;</i>        </div>        <ul class=\"clear\">            <li class=\"active\"><a href=\"index.html\">首页</a></li>            <li><a href=\"furniture.html\">家具</a></li>            <li><a href=\"bed.html\">床品</a></li>            <li><a href=\"decoration.html\">家饰</a></li>            <li><a href=\"fabric.html\">布艺软装</a></li>            <li><a href=\"fabric.html\">收纳</a></li>            <li><a href=\"new_products.html\">新品</a></li>        </ul>    </div>    </nav>"
+module.exports = "<header>    <div class=\"head clear\">        {{if !stuts}}        <div id=\"login\">            <i>&#xe646;</i>            <span>登录</span>        </div>        <div id=\"register\">            注册        </div>        {{else}}        <div id=\"user\">            <span>{{telephone}}</span>            <ul>                <li><a href=\"userhome.html\">账户中心</a></li>                <li><a>我的订单</a></li>                <li><a>我的收藏</a></li>                <li><a>地址管理</a></li>                <li><a class=\"launch\">退出登录</a></li>            </ul>        </div>        <div id=\"cart\">            <i>&#xe63f;</i>            <a href=\"shoppingcart.html\"><span>购物车</span></a>        </div>        {{/if}}    </div></header><nav>    <div class=\"nav\">        <div id=\"logo\">            <img src=\"./images/logo.png\" alt=\"\">        </div>        <div class=\"search\">            <input type=\"text\" placeholder=\"沙发\">            <i>&#xe651;</i>        </div>        <ul class=\"clear\">            <li  id=\"nav_index\" ><a href=\"index.html\">首页</a></li>            <li id=\"nav_furniture\"><a href=\"furniture.html\">家具</a></li>            <li id=\"nav_bed\"><a href=\"bed.html\">床品</a></li>            <li id=\"nav_decoration\"><a href=\"decoration.html\">家饰</a></li>            <li id=\"nav_fabric\"><a href=\"fabric.html\">布艺软装</a></li>            <li id=\"nav_shouna\"><a href=\"fabric.html\">收纳</a></li>            <li id=\"nav_new\"><a href=\"new_products.html\">新品</a></li>        </ul>    </div>    </nav>"
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">    <div id=\"header\"></div>    <div id=\"container\"></div></div>"
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = "<footer>    甄选家居版权所有©2018</footer>"
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"layer\">    <div class=\"lr\">        <div class=\"lr_logo\"><img src=\"../../images/lr_logo.png\"/></div>        <div class=\"lr_close\"></div>        <div class=\"lr_title\">            <div class=\"lr_logbtn fl_l now\">                <button>登录</button>            </div>            <div class=\"lr_resbtn fl_r\">                <button>注册</button>            </div>        </div>        <div class=\"lr_login\">            <form >                <div>                    <input id=\"log_usn\" class=\"usn\" type=\"text\" name=\"usn\" placeholder=\"请输入手机号\"/>                </div>                <div>                    <input id=\"log_pwd\" class=\"pwd\" type=\"password\" name=\"pwd\" placeholder=\"请输入密码\"/>                </div>                <button class=\"login_btn\">登录</button>            </form>        </div>        <div class=\"lr_res\">            <form >                <!--method=\"post\" action=\"/api/user/register\"-->                <div>                    <input id=\"reg_usn\" class=\"usn\" type=\"text\" name=\"telephone\" placeholder=\"请输入手机号\"/>                </div>                <div>                    <input class=\"code\" type=\"text\" name=\"code\" placeholder=\"请输入验证码\" disabled/>                    <input class=\"code_btn\" type=\"button\"value=\"获取手机验证码\"/>                </div>                <div>                    <input id=\"reg_pwd\" class=\"pwd\" type=\"password\" name=\"password\" placeholder=\"请输入密码\"/>                </div>                <button class=\"res_btn\">注册</button>            </form>        </div>        <!--<div class=\"lr_register\">-->        <!--</div>-->    </div></div>"
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-const loginAndResgister = {
-    lr(data){
-        // console.log(data)
-        $("#login").on('click',()=>{
-            console.log('1')
-            $(".lr_logbtn button").addClass("lr_activ")
-            $(".lr_resbtn button").removeClass("lr_activ")
-            $(".layer").show();
-            $(".lr_res").hide();
-            $(".lr_login").show();
-        })
-        $("#register").on('click',()=>{
-            $(".lr_resbtn button").addClass("lr_activ")
-            $(".lr_logbtn button").removeClass("lr_activ")
-            $(".layer").show();
-            $(".lr_res").show();
-            $(".lr_login").hide();
-        })
-
-        $(".lr_logbtn button").on('click',()=>{
-            $(".lr_logbtn button").addClass("lr_activ")
-            $(".lr_resbtn button").removeClass("lr_activ")
-            $(".lr_login").show();
-            $(".lr_res").hide();
-        })
-        $(".lr_resbtn button").on('click',()=>{
-            $(".lr_resbtn button").addClass("lr_activ")
-            $(".lr_logbtn button").removeClass("lr_activ")
-            $(".lr_res").show();
-            $(".lr_login").hide();
-        })
-        $(".lr_close").on('click',()=>{
-            $(".layer").hide();
-        })
-    },
-
-}
-
-module.exports = loginAndResgister
-
-/***/ }),
-/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -226,7 +164,7 @@ const userLRController = {
         $('.launch').on('click', function(){
             // console.log('123')
             wsCache.delete('telephone');
-            location.replace('/index.html');
+            location.replace('http://39.106.187.52:8080/ssh1fs/dev/index.html');
             // var header = template.render(headerTpl, {telephone: '', stuts:false})
             // $("#header").html(header)
         }.bind(this))
@@ -244,6 +182,68 @@ module.exports = userLRController
 
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">    <div id=\"header\"></div>    <div id=\"container\"></div></div>"
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports = "<footer>    甄选家居版权所有©2018</footer>"
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"layer\">    <div class=\"lr\">        <div class=\"lr_logo\"><img src=\"../../images/lr_logo.png\"/></div>        <div class=\"lr_close\"></div>        <div class=\"lr_title\">            <div class=\"lr_logbtn fl_l now\">                <button>登录</button>            </div>            <div class=\"lr_resbtn fl_r\">                <button>注册</button>            </div>        </div>        <div class=\"lr_login\">            <form >                <div>                    <input id=\"log_usn\" class=\"usn\" type=\"text\" name=\"usn\" placeholder=\"请输入手机号\"/>                </div>                <div>                    <input id=\"log_pwd\" class=\"pwd\" type=\"password\" name=\"pwd\" placeholder=\"请输入密码\"/>                </div>                <button class=\"login_btn\">登录</button>            </form>        </div>        <div class=\"lr_res\">            <form >                <!--method=\"post\" action=\"/api/user/register\"-->                <div>                    <input id=\"reg_usn\" class=\"usn\" type=\"text\" name=\"telephone\" placeholder=\"请输入手机号\"/>                </div>                <div>                    <input class=\"code\" type=\"text\" name=\"code\" placeholder=\"请输入验证码\" disabled/>                    <input class=\"code_btn\" type=\"button\"value=\"获取手机验证码\"/>                </div>                <div>                    <input id=\"reg_pwd\" class=\"pwd\" type=\"password\" name=\"password\" placeholder=\"请输入密码\"/>                </div>                <button class=\"res_btn\">注册</button>            </form>        </div>        <!--<div class=\"lr_register\">-->        <!--</div>-->    </div></div>"
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+const loginAndResgister = {
+    lr(data){
+        // console.log(data)
+        $("#login").on('click',()=>{
+            console.log('1')
+            $(".lr_logbtn button").addClass("lr_activ")
+            $(".lr_resbtn button").removeClass("lr_activ")
+            $(".layer").show();
+            $(".lr_res").hide();
+            $(".lr_login").show();
+        })
+        $("#register").on('click',()=>{
+            $(".lr_resbtn button").addClass("lr_activ")
+            $(".lr_logbtn button").removeClass("lr_activ")
+            $(".layer").show();
+            $(".lr_res").show();
+            $(".lr_login").hide();
+        })
+
+        $(".lr_logbtn button").on('click',()=>{
+            $(".lr_logbtn button").addClass("lr_activ")
+            $(".lr_resbtn button").removeClass("lr_activ")
+            $(".lr_login").show();
+            $(".lr_res").hide();
+        })
+        $(".lr_resbtn button").on('click',()=>{
+            $(".lr_resbtn button").addClass("lr_activ")
+            $(".lr_logbtn button").removeClass("lr_activ")
+            $(".lr_res").show();
+            $(".lr_login").hide();
+        })
+        $(".lr_close").on('click',()=>{
+            $(".layer").hide();
+        })
+    },
+
+}
+
+module.exports = loginAndResgister
+
+/***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
@@ -252,7 +252,7 @@ module.exports = {
     sign(data,url){
         // console.log(JSON.stringify(data))
         return $.ajax({
-            url: '/backend/qqq/api/user/' + url,
+            url: '/qqq/api/user/' + url,
 
             contentType: "application/json",
             type: 'post',
@@ -266,7 +266,23 @@ module.exports = {
 }
 
 /***/ }),
-/* 7 */,
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = {
+    changeClass(){
+        $('.nav ul li').on('click',function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    },
+   changeNavClass(){
+       let title = 'nav_' + $('main').attr('id')
+        
+
+   }
+}
+
+/***/ }),
 /* 8 */,
 /* 9 */,
 /* 10 */,
@@ -278,24 +294,24 @@ module.exports = {
 /* 16 */,
 /* 17 */,
 /* 18 */,
-/* 19 */
+/* 19 */,
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const indexTpl = __webpack_require__(1)
+const indexTpl = __webpack_require__(2)
 const headerTpl = __webpack_require__(0)
-const footerTpl = __webpack_require__(2)
+const footerTpl = __webpack_require__(3)
 // const newTpl = require("./views/new.html")
-const logresTpl = __webpack_require__(3)
-const logRes = __webpack_require__(4)
-const userController = __webpack_require__(5)
+const logresTpl = __webpack_require__(4)
+const logRes = __webpack_require__(5)
 
-const decorationController = __webpack_require__(20)
-
+const decorationController = __webpack_require__(21)
+const commonController = __webpack_require__(7)
+// commonController.changeClass()
+const userController = __webpack_require__(1)
 
 
 $("#root").html(indexTpl)
-
-
 
 ;(async () => {
     let html = await decorationController.render()
@@ -308,15 +324,15 @@ $("#root").html(indexTpl)
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const decorationModel = __webpack_require__(21)
-const decorationTpl = __webpack_require__(22)
+const decorationModel = __webpack_require__(22)
+const decorationTpl = __webpack_require__(23)
 const decorationController = {
     async render(){
         let result = await decorationModel.find()
-        console.log(result);
+        // console.log(result);
         let fresult = result.data.Category
         // console.log(fresult);
         let html = template.render(decorationTpl,fresult)
@@ -328,12 +344,12 @@ const decorationController = {
 module.exports = decorationController
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = {
     find(){
-        return fetch('/api/decorationList')
+        return fetch('http://39.106.187.52:8080/ssh1fs/mock/decoration.json')
         .then(response => response.json())
         .then(result => {
             return result
@@ -342,10 +358,10 @@ module.exports = {
 }
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
-module.exports = "<main id=\"decoration\" class=\"clear\">    <main>        <div class=\"swiper-container\">            <div class=\"swiper-wrapper\">                <div class=\"swiper-slide\"><a href=\"###\"><img src=\"./images/furniture/1.png\" alt=\"\"></a></div>                <div class=\"swiper-slide\"></div>                <div class=\"swiper-slide\"></div>            </div>            <!-- 如果需要分页器 -->            <div class=\"swiper-pagination\"></div>        </div>        <p class=\"title\">家饰</p>        <div class=\"decoration_container clear\">            <ul>                {{each productList}}                <li pid=\"{{$value.pid}}\">                    <a href=\"###\">                        <img src=\"{{$value.imgUrl}}\" alt=\"\">                    </a>                    <p>{{$value.productName}}</p>                    <b>¥<span>{{$value.marketPrice}}</span></b>                    <i></i>                    <h6>{{$value.productInfo}}</h6>                </li>                {{/each}}            </ul>        </div>    </main></main>"
+module.exports = "<main id=\"decoration\" class=\"clear\">    <main>        <div class=\"swiper-container\">            <div class=\"swiper-wrapper\">                <div class=\"swiper-slide\"><a href=\"###\"><img src=\"./images/furniture/1.png\" alt=\"\"></a></div>                <div class=\"swiper-slide\"></div>                <div class=\"swiper-slide\"></div>            </div>            <!-- 如果需要分页器 -->            <div class=\"swiper-pagination\"></div>        </div>        <p class=\"title\">家饰</p>        <div class=\"decoration_container clear\">            <ul>                {{each productList}}                <li pid=\"{{$value.pid}}\">                    <a href=\"/item.html?{{$value.pid}}\">                        <img src=\"{{$value.imgUrl}}\" alt=\"\">                    </a>                    <p>{{$value.productName}}</p>                    <b>¥<span>{{$value.marketPrice}}</span></b>                    <i></i>                    <h6>{{$value.productInfo}}</h6>                </li>                {{/each}}            </ul>        </div>    </main></main>"
 
 /***/ })
 /******/ ]);

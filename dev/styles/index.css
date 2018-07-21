@@ -35,7 +35,8 @@ img {
 
 a, input {
   outline: none;
-  border: 0; }
+  border: 0;
+  cursor: pointer; }
 
 .clear:after {
   content: ".";
@@ -388,6 +389,8 @@ a, input {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 100px;
+            height: 100px;
             transform: translate(-50%, -50%); }
         #new main .new_products_container ul li p {
           font-size: 22px;
@@ -447,6 +450,8 @@ a, input {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 100px;
+            height: 100px;
             transform: translate(-50%, -50%); }
         #furniture main .sofa_container ul li p {
           font-size: 22px;
@@ -488,6 +493,8 @@ a, input {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 100px;
+            height: 100px;
             transform: translate(-50%, -50%); }
         #furniture main .seats_container ul li p {
           font-size: 22px;
@@ -529,6 +536,8 @@ a, input {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 100px;
+            height: 100px;
             transform: translate(-50%, -50%); }
         #furniture main .bedCabnit_container ul li p {
           font-size: 22px;
@@ -588,6 +597,8 @@ a, input {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 100px;
+            height: 100px;
             transform: translate(-50%, -50%); }
         #decoration main .decoration_container ul li p {
           font-size: 22px;
@@ -647,6 +658,8 @@ a, input {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 100px;
+            height: 100px;
             transform: translate(-50%, -50%); }
         #bed main .bed_container ul li p {
           font-size: 22px;
@@ -706,6 +719,8 @@ a, input {
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 100px;
+            height: 100px;
             transform: translate(-50%, -50%); }
         #fabric main .fabric_container ul li p {
           font-size: 22px;
@@ -1215,7 +1230,8 @@ a, input {
           color: #333;
           line-height: 52px; }
         #item section .show_info .options .buttonList {
-          position: relative; }
+          position: relative;
+          margin-top: 50px; }
           #item section .show_info .options .buttonList .buyNow {
             border: 1px solid #996633;
             width: 190px;
@@ -1685,6 +1701,8 @@ a, input {
               position: absolute;
               top: 50%;
               left: 50%;
+              width: 100px;
+              height: 100px;
               transform: translate(-50%, -50%); }
           .userhome_content #myCollections #collection_box ul li p {
             font-size: 22px;

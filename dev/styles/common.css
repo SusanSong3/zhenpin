@@ -35,7 +35,8 @@ img {
 
 a, input {
   outline: none;
-  border: 0; }
+  border: 0;
+  cursor: pointer; }
 
 .clear:after {
   content: ".";
